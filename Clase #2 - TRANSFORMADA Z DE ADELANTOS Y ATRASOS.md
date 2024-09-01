@@ -10,13 +10,26 @@ $$ F(t) = F(kT) $$
 
 >Figura 1. Función en tiempo continuo y discreto
 
-
 ## 2. REPRESENTACIÓN MATEMÁTICA DE LOS SISTEMAS
 ### 2.1 Ecuación en diferencias
 
-$$ B_n*U(k) + B_(n-1) * U_(k-1) + ... + B_o * U(k-n) = y(k)+a_(n-1)*y(k-1)+...+aoy_)k-n)$$
+$$ B_n*U(k) + B_(n-1) * U_(k-1) + ... + B_o * U(k-n) = y(k)+a_(n-1)*y(k-1)+...+aoy_(k-n)$$
 
-Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
+*	Donde “U” es la entrada y “Y” es la salida.
+*	El sistema se representa a través de una combinación lineal.
+*	Las ecuaciones en diferencias representan el comportamiento dinámico de un sistema en términos de sus señales de entrada y de salida.
+
+### 2.2 CARACTERISTICAS ECUACIONES EN DIFERENCIAS 
+
+*Las ecuaciones en diferencias pueden ser homogéneas, lineales, invariantes en el tiempo.
+$$ y(k+2) + 0.8y(k+1) + 0.7y(k)U(k) = 0$$
+
+*Lineal, invariante en el tiempo, no homogénea.
+$$ y(k+4) + sen(0.4k)y(k+1) + 0.3y(k) = 0$$
+
+*Lineal, variante en el tiempo, homogénea.
+$$ y(k+1) = -0.1*y(k)^2$$
+
 >🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
 
 ## 3. Subsecciones
