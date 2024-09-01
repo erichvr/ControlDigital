@@ -65,7 +65,7 @@ Es un procedimiento similar a la solución de ecuaciones diferenciales en donde 
 ### 4.2 TRANSFORMADA Z IMPORTANTES EN CONTROL
 En las ecuaciones en diferencias tenemos términos del tipo:
 
-$$𝑓(𝑘+𝑛) 𝑜 𝑓(𝑘-𝑛)$$
+$$𝑓(𝑘+𝑛)$$ 𝑜 $$𝑓(𝑘-𝑛)$$
 
 * Donde n es el número de muestra que se desplaza la función.
 * Entonces la transformada Z de este tipo de términos son muy importantes en el área de control.
@@ -115,7 +115,23 @@ Si se agrega un muestreador entre los dos sistemas.
 Dada la siguiente ecuación obtener la función de transferencia
 $$3y(k) + 2y(k-1) - y(k-2) = 2u(k-1) - 3u(k-2)$$
 >* Se aplica transformada Z
-$$3y(k) + 2y(k-1) - y(k-2) = 2u(k-1) - 3u(k-2)$$
+$$3Y(z) + 2z^(-1)(Y(z) - y(-1)z) -z^(-2)(Y(z) + y(-1)z + y(-2)z^2) = 2z^(-1)u(z) - 3z^(-2)u(z)$$
+
+![image](https://github.com/user-attachments/assets/cf5e1d4a-c460-47de-8cac-eb27da2b1092)
+>Figura 12. FT resultante
+
+>💡 Ejemplo 3:
+![image](https://github.com/user-attachments/assets/5e21a283-ba07-4a33-80ad-5007d63dcaf7)
+![image](https://github.com/user-attachments/assets/f1a5bf28-6ed9-4af3-a122-17215d216cbd)
+>Figura 13. Desarrollo y graficación ejercicio.
+
+El sistema da respuesta solamente al haber aplicado una entrada teniendo en cuenta que si m > n la función de transferencia es propia la cual se le denomina un sistema causal.
+
+
+## 7. TIEMPO MUERTO EN SISTEMAS DISCRETOS
+El tiempo muerto es más fácil de medir en sistemas discretos comparando el grado de los polinomios de la función de transferencia.
+
+
 ## 5. Ecuaciones
 Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
 
