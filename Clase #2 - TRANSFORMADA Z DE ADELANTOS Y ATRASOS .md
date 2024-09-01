@@ -1,7 +1,15 @@
-# Titulo de la clase
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+# TRANSFORMADA Z DE ADELANTOS Y ATRASOS
+La transformada Z es una herramienta fundamental en el análisis y diseño de sistemas de control digital. Permite transformar ecuaciones en diferencias, que describen el comportamiento dinámico de un sistema en términos de sus entradas y salidas discretas, en el dominio Z. Esto facilita la resolución de dichas ecuaciones y la obtención de funciones de transferencia discretas, esenciales para analizar y entender el comportamiento de los sistemas en tiempo discreto. Además, la transformada Z es crucial en el estudio de adelantos y atrasos en las señales, lo que tiene aplicaciones directas en la mejora de la estabilidad y el rendimiento de sistemas de control digital.
+
+## 1. FUNCIÓN EN TÉRMINOS DE MUESTRAS
+$$ F(t) = F(kT) $$
+
+>🔑 *T: Periodo de muestreo*
+
+![image](https://github.com/user-attachments/assets/447ff947-f470-469c-8533-a486c6438ac1)
+
+>Figura 1. Función en tiempo continuo y discreto
+
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
