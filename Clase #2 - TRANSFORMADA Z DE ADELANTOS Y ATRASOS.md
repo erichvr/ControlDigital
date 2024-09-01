@@ -44,10 +44,19 @@ o	Transformada Z
 ## 3. Transformada Z
 ### 3.1. Ecuación en diferencias
 
+Las ecuaciones en diferencias es el comportamiento dinámico de un sistema, similar a las ecuaciones diferenciales, pero utilizando señales discretas. En este contexto, ”u” representa la entrada del sistema y ”y” la salida. La dinámica del sistema se expresa mediante una combinación lineal de diferentes muestras de estas señales, lo que permite modelar cómo la salida depende de entradas actuales y pasadas.
+
 $$b_nu(k) + b_(n-1) u(k-1) +...+ b_0 u(k-n) = y(k) + a_(n-1)y(k-1) +...+ a_0 y(k-n)$$
 
 * La solución numérica da los valores de “y” para un numero finito de muestras, sin embargo, no permite identificar características generales del funcionamiento del sistema.
 * La solución por transformada Z permite obtener una expresión matemática para dar la solución de la ecuación en cualquier muestra.
+
+En sistemas de tiempo discreto, es posible obtener una representación de función de transferencia en el dominio z, análoga a la del tiempo continuo.
+Esta representación ofrece ventajas significativas, como la capacidad de identificar el comportamiento del sistema a través de la identificación de parámetros. La función de transferencia pulso, en particular, describe la relación entre la salida y la entrada muestreadas de un sistema dinámico, proporcionando una herramienta valiosa para el análisis y diseño de sistemas discretos.
+
+La transformada Z es la contraparte discreta de la transformada de Laplace, utilizada para analizar sistemas en tiempo discreto. A pesar de su similitud funcional, el espacio Z presenta características distintas al espacio de Laplace.
+Estas diferencias se deben principalmente a la naturaleza discreta de las señales
+que la transformada Z maneja, en contraste con las se˜ nales continuas de Laplace.
 
 ![image](https://github.com/user-attachments/assets/04fadd6c-a139-4c3d-bc34-db2712121f8f)
 
@@ -75,6 +84,8 @@ $$𝑓(𝑘+𝑛)$$ 𝑜 $$𝑓(𝑘-𝑛)$$
 >Figura 4. Ilustración del atraso de una señal. 
 
 ![image](https://github.com/user-attachments/assets/86cbe15b-2428-41b6-8d6c-ea67bc01aa28)
+![image](https://github.com/user-attachments/assets/93a5dc56-0415-4f49-9b85-b3207dd880b9)
+
 >Figura 5. Transformada Z en un atraso
 
 *	ATRASO = Negativo
@@ -85,6 +96,8 @@ $$𝑓(𝑘+𝑛)$$ 𝑜 $$𝑓(𝑘-𝑛)$$
 >Figura 6. Ilustración del adelanto de una señal. 
 
 ![image](https://github.com/user-attachments/assets/59807c50-79c2-41f5-8487-244f3f832041)
+![image](https://github.com/user-attachments/assets/e7412e22-e28b-47a0-8751-f963871ebed7)
+
 >Figura 7. Transformada Z en un adelanto
 
 ## 5. Función de trasferencia discreta
@@ -136,60 +149,19 @@ $$R = M - N$$
 
 Se sabe que el valor de r es la cantidad de muestras que hay de tiempo muerto, si r = 0 es sistema es bipropio.
 
-## 5. Ecuaciones
-Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
 
-💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
+## 8. Ejercicios
+>📚Ejercicio 1: Ecuación en Diferencia
+![image](https://github.com/user-attachments/assets/6859e88c-53bf-45d0-bdec-b80db9750cdb)
+>Figura 14. Desarrollo ejercicio 1
 
-$$R=\frac{V}{I}$$
+>📚Ejercicio 2: Función de transferencia
+![image](https://github.com/user-attachments/assets/f7a12e86-092a-49c6-a0e4-b9eae8f9f660)
+>Figura 15. Desarrollo ejercicio 2
 
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
 
-💡**Ejemplo 2:**
-
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
-
-## 7. Tablas
-En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
-
-💡**Ejemplo 3:** 
-
-| **Resultado** | **x = número de intentos hasta primer éxito** |
-|---------------|-----------------------------------------------|
-|       S       |                       1                       |
-|       FS      |                       2                       |
-|      FFS      |                       3                       |
-|      ...      |                      ...                      |
-|    FFFFFFS    |                       7                       |
-|      ...      |                      ...                      |
-
-Tabla 1. Tabla de ejemplo
-
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
-
-## 8. Código
-Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
-
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
-
-## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
-
-## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
+## 9. Conclusiones
+La transformada Z es esencial en el análisis de sistemas de control digital, permitiendo la conversión de ecuaciones en diferencias a un formato que facilita su resolución y análisis. Esto es crucial para entender y mejorar la estabilidad y rendimiento de estos sistemas, especialmente en la manipulación de adelantos y atrasos en señales discretas. Además, permite obtener funciones de transferencia en el dominio Z, análogas a las de sistemas continuos, lo que es fundamental en el diseño y análisis de sistemas dinámicos discretos.
 
 ## 11. Referencias
 Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
