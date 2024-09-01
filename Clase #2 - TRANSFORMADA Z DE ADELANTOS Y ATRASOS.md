@@ -92,11 +92,30 @@ $$𝑓(𝑘+𝑛) 𝑜 𝑓(𝑘-𝑛)$$
 Al igual que en tiempo continuo, en tiempo discreto es posible obtener una representación de función de transferencia en el dominio Z, teniendo en cuenta que tiene múltiples ventajas como poder identificar el comportamiento del sistema desde la identificación de parámetros.
 
 ![image](https://github.com/user-attachments/assets/c40786bc-ac43-4a0a-9725-e87438e9ad57)
-* Donde $$𝑥∗(𝑡) 𝑦 𝑦∗ 𝑡$$ son las señales x(t) y y(t) muestreadas.
+>Figura 8. Diagrama de bloques de un sistema que st[a siendo muestreado cada T tiempo.
+* Donde $$𝑥^*(𝑡)$$ 𝑦 $$𝑦^*(𝑡)$$ son las señales x(t) y y(t) muestreadas.
 
-## 4. Ejemplos
-Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
+![image](https://github.com/user-attachments/assets/500615b1-9dc6-48f6-a3a5-6ee57d9a8005)
+>Figura 9. Simplificación.
 
+* Para dos sistemas en cascada:
+  ![image](https://github.com/user-attachments/assets/290c9bf1-bc05-41fd-be4e-9d0040bcec1f)
+  >Figura 10. Simplificación.
+  
+## 6. Ejemplos
+>💡 Ejemplo 1:
+Si se agrega un muestreador entre los dos sistemas.
+
+![image](https://github.com/user-attachments/assets/f7ac8898-c925-42ab-941c-1d677bb66401)
+![image](https://github.com/user-attachments/assets/f9db07c9-3d5c-4e18-afe8-f62b57ab7dd0)
+
+>Figura 11. Obtención de la FT en dominio s
+
+>💡 Ejemplo 2:
+Dada la siguiente ecuación obtener la función de transferencia
+$$3y(k) + 2y(k-1) - y(k-2) = 2u(k-1) - 3u(k-2)$$
+>* Se aplica transformada Z
+$$3y(k) + 2y(k-1) - y(k-2) = 2u(k-1) - 3u(k-2)$$
 ## 5. Ecuaciones
 Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
 
