@@ -29,8 +29,14 @@ Sirve para relacionar la salida del sistema con respecto a las variables de entr
 
 
 💡*Ejemplo:*
-L^{-1} \{ c(s) \} = 2 \cdot L^{-1} \left\{ \frac{(s-1) + 1}{(s-1)^2 + 4} \right\}
 
+![image](https://github.com/user-attachments/assets/8ca56560-b6c3-4d6f-8c15-2687fb190da9)
+>Figura 5. Ejercicio de invarianza al pulso.
+
+### *Método de invarianza al paso*
+Para este caso, lo que se opta por hacer es aplicar a nuestra señal discretizada y sin discretizar, un escalón unitario. Sí la respuesta es la misma para ambas señales, entonces la señal es invariable en el tiempo.
+
+$$u(t)c(t); /frac{1}{s} c(s); /frac{z}{z-1} c(z)$$
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
