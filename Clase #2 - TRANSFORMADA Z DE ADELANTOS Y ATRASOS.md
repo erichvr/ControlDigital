@@ -81,6 +81,7 @@ $$𝑓(𝑘+𝑛)$$ 𝑜 $$𝑓(𝑘-𝑛)$$
 
 ### 4.2.1 Atraso
 ![image](https://github.com/user-attachments/assets/7a5001b5-ada4-4173-8e5c-e56a27ac910f)
+
 >Figura 4. Ilustración del atraso de una señal. 
 
 ![image](https://github.com/user-attachments/assets/86cbe15b-2428-41b6-8d6c-ea67bc01aa28)
@@ -93,6 +94,7 @@ $$𝑓(𝑘+𝑛)$$ 𝑜 $$𝑓(𝑘-𝑛)$$
 
 ### 4.2.2 Adelanto
 ![image](https://github.com/user-attachments/assets/24ae2384-0568-476c-a050-94605bd5e0fe)
+
 >Figura 6. Ilustración del adelanto de una señal. 
 
 ![image](https://github.com/user-attachments/assets/59807c50-79c2-41f5-8487-244f3f832041)
@@ -105,14 +107,18 @@ $$𝑓(𝑘+𝑛)$$ 𝑜 $$𝑓(𝑘-𝑛)$$
 Al igual que en tiempo continuo, en tiempo discreto es posible obtener una representación de función de transferencia en el dominio Z, teniendo en cuenta que tiene múltiples ventajas como poder identificar el comportamiento del sistema desde la identificación de parámetros.
 
 ![image](https://github.com/user-attachments/assets/c40786bc-ac43-4a0a-9725-e87438e9ad57)
+
 >Figura 8. Diagrama de bloques de un sistema que st[a siendo muestreado cada T tiempo.
+
 * Donde $$𝑥^*(𝑡)$$ 𝑦 $$𝑦^*(𝑡)$$ son las señales x(t) y y(t) muestreadas.
 
 ![image](https://github.com/user-attachments/assets/500615b1-9dc6-48f6-a3a5-6ee57d9a8005)
+
 >Figura 9. Simplificación.
 
 * Para dos sistemas en cascada:
   ![image](https://github.com/user-attachments/assets/290c9bf1-bc05-41fd-be4e-9d0040bcec1f)
+  
   >Figura 10. Simplificación.
   
 ## 6. Ejemplos
@@ -131,11 +137,13 @@ $$3y(k) + 2y(k-1) - y(k-2) = 2u(k-1) - 3u(k-2)$$
 $$3Y(z) + 2z^(-1)(Y(z) - y(-1)z) -z^(-2)(Y(z) + y(-1)z + y(-2)z^2) = 2z^(-1)u(z) - 3z^(-2)u(z)$$
 
 ![image](https://github.com/user-attachments/assets/cf5e1d4a-c460-47de-8cac-eb27da2b1092)
+
 >Figura 12. FT resultante
 
 >💡 Ejemplo 3:
 ![image](https://github.com/user-attachments/assets/5e21a283-ba07-4a33-80ad-5007d63dcaf7)
 ![image](https://github.com/user-attachments/assets/f1a5bf28-6ed9-4af3-a122-17215d216cbd)
+>
 >Figura 13. Desarrollo y graficación ejercicio.
 
 El sistema da respuesta solamente al haber aplicado una entrada teniendo en cuenta que si m > n la función de transferencia es propia la cual se le denomina un sistema causal.
@@ -145,6 +153,7 @@ El sistema da respuesta solamente al haber aplicado una entrada teniendo en cuen
 El tiempo muerto es más fácil de medir en sistemas discretos comparando el grado de los polinomios de la función de transferencia.
 
 $$EXCESO POLO - ZERO$$
+
 $$R = M - N$$
 
 Se sabe que el valor de r es la cantidad de muestras que hay de tiempo muerto, si r = 0 es sistema es bipropio.
@@ -164,4 +173,8 @@ Se sabe que el valor de r es la cantidad de muestras que hay de tiempo muerto, s
 La transformada Z es esencial en el análisis de sistemas de control digital, permitiendo la conversión de ecuaciones en diferencias a un formato que facilita su resolución y análisis. Esto es crucial para entender y mejorar la estabilidad y rendimiento de estos sistemas, especialmente en la manipulación de adelantos y atrasos en señales discretas. Además, permite obtener funciones de transferencia en el dominio Z, análogas a las de sistemas continuos, lo que es fundamental en el diseño y análisis de sistemas dinámicos discretos.
 
 ## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+[1] "Sistemas causales y no causales," Blog ESPOL, 2016. [Enlace: http://blog.espol.edu.ec/telg1001/sistemas-causales-y-no-causales/]
+
+[2] J. Pérez, Sistemas Causales y No Causales. Digitalia Publishing, 2022. [Enlace: https://www.digitaliapublishing.com/a/130029]
+
+[3] "Métodos Iterativos," Scribd, 2018. [Enlace: https://es.scribd.com/document/390484476/Metodos-Iterativos]
