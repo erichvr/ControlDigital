@@ -1,9 +1,17 @@
 # Discretización de controladores Analógicos
-## ¿Qué es la discretización de señales analógicas?![image](https://github.com/user-attachments/assets/bc57868c-6f07-4c20-8035-1721089a012b)
+## ¿Qué es la discretización de señales analógicas?
+Se trata de la transformación de una señal de tiempo continuo a tiempo discreto, con el objetivo de muestrear una señal, obtener sus valores en intervalos constantes de tiempo que permitan su procesamiento. Esto resulta como una señal digital.
+Se utiliza para decirle a un controlador que acciones hacer sobre una señal recibida.
+Para control, esto se logra buscando la equivalencia entre el espacio de Laplace y el espacio Z
 
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+![image](https://github.com/user-attachments/assets/52a6df84-4531-4adf-9283-799bf1829133)
+![image](https://github.com/user-attachments/assets/39480da1-eeea-472d-82de-2c6700f6a89c)
+
+>Figura 1 y 2.Discretización de una señal en tiempo continuo, muestreada y digitalizada.
+
+## ¿Qué métodos se utilizan para la discretización de señales analógicas?
+* *Método de invarianza al pulso*
+
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
