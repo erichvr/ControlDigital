@@ -83,7 +83,31 @@ $$sX(s) ≈ \frac{z-1}{T} X(z)$$
 
 $$s ≈ \frac{z-1}{T}$$
 
+### *Método Euler Atrás*
+Para este método, se tiene en cuenta la muestra anterior a la actual. Es decir, un sistema con memoria. Definiendo la derivada así:
 
+![image](https://github.com/user-attachments/assets/8a73d5fb-fabb-4713-b342-23840f5adfce)
+
+>Figura 10. Diferencial de la muestra actual y anterior.
+
+Del mismo modo, aplicamos transformada Z:
+
+![image](https://github.com/user-attachments/assets/332cd934-91f2-466d-bf52-8fe88875eb16)
+
+Entonces, igualamos nuevamente dominio de Laplace y dominio Z:
+
+$$sX(s) ≈ \frac{z-1}{Tz} X(z)$$
+
+$$s ≈ \frac{z-1}{Tz}$$
+
+### *Método Trapezoidal*
+Para este método, ya se plantea una igualdad entre el dominio s y el dominio z, así:
+
+$$s = \frac{\frac{2}{T} (z-1)}{z+1} $$
+
+$$z = \frac{1+ \frac{Ts}{2}}{1- \frac{Ts}{2}}$$
+
+Con estas equivalencias, es posible discretizar una función de Laplace a Z.
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
