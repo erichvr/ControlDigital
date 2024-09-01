@@ -45,6 +45,9 @@ $$u(t)c(t); \frac{1}{s} c(s); \frac{z}{z-1} c(z)$$
 
 >Figura 6. Transformadas necesarias para obtener la FT en dominio Z.
 
+![image](https://github.com/user-attachments/assets/9686737b-4c9b-4adc-87b7-cc8035848922)
+
+
 Esta igualdad se debe cumplir, obteniendo la FT en el dominio Z a partir de:
 1. Aplicarle a la función de transferencia en el dominio S un escalón.
 2. Obtener la función en tiempo continuo y se traslada a tiempo discreto (Esto se hace indirectamente al aplicar Transformada Z a la transformada inversa de Laplace).
@@ -109,63 +112,19 @@ $$z = \frac{1+ \frac{Ts}{2}}{1- \frac{Ts}{2}}$$
 
 Con estas equivalencias, es posible discretizar una función de Laplace a Z.
 
-## 4. Ejemplos
-Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
-
-## 5. Ecuaciones
-Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
-
-💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
-
-$$R=\frac{V}{I}$$
-
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
-
-💡**Ejemplo 2:**
-
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
-
-## 7. Tablas
-En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
-
-💡**Ejemplo 3:** 
-
-| **Resultado** | **x = número de intentos hasta primer éxito** |
-|---------------|-----------------------------------------------|
-|       S       |                       1                       |
-|       FS      |                       2                       |
-|      FFS      |                       3                       |
-|      ...      |                      ...                      |
-|    FFFFFFS    |                       7                       |
-|      ...      |                      ...                      |
-
-Tabla 1. Tabla de ejemplo
-
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
-
-## 8. Código
-Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
-
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
-
 ## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
+📚 Ejercicio invarianza al pulso:
+
+![image](https://github.com/user-attachments/assets/1b41b7b1-26dd-4abd-a534-f59cc8b9a6bc)
+
+>Figura 11. Ejercicio invarianza al pulso.
 
 ## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
+Discretización de Señales: La discretización de señales analógicas convierte una señal continua en una señal discreta mediante diferentes métodos, permitiendo su procesamiento digital y el control en sistemas discretos.
+
+Métodos de Discretización: Los métodos como la invarianza al pulso, invarianza al paso, Euler adelante y atrás, y el método trapezoidal son fundamentales para transformar modelos continuos en discretos, asegurando que el comportamiento dinámico del sistema se preserve en el dominio digital.
 
 ## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+[1] "Discretización de controladores," Repositorio Universidad de Ibagué, 2024. [Enlace: https://repositorio.unibague.edu.co/entities/publication/6b138ca4-3a0a-48bc-a629-51e40bcf1edd]
+
+[2] J. A. Cortés Osorio, H. B. Cano Garzón y J. A. Chaves Osorio, "Fundamentos y aplicación del muestreo en señales ubicadas en las bandas altas del espectro," Scientia et Technica, vol. 14, no. 39, pp. 37-42, 2008.
