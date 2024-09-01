@@ -45,27 +45,33 @@ Figura 4. Tiempo de muestreador
 Realmente son 2𝑟 − 1 posibles símbolos porque se gasta un símbolo representando el 0V
 ![image](https://github.com/user-attachments/assets/04d20d00-9ed8-4ee1-ae2c-6fabb033dbdd)
 
-Figura 5. Tabla de valores posbles
+Tabla 1. Tabla de valores posbles
 
 ## 3. CONVERSOR DIGITAL / ANALÓGICO: 
 Es un dispositivo que genera correspondencia uno a uno entre valores digitales y valores analógicos. Además, se tiene en cuenta para el rengo completo de la entrada digital, existen 2 valores analógicos correspondientes, diferentes incluyendo el cero (0).
 
 ![image](https://github.com/user-attachments/assets/d4fde933-3700-4cc9-9de4-14cd9ccbffd0)
 
-Figura 6. Diagrama de bloques de un sistema de adquisición y procesamiento de datos.
+Figura 5. Diagrama de bloques de un sistema de adquisición y procesamiento de datos.
 
 ## 4. RESOLUCIÓN DAC: 
 La resolución depende de los bits de representación al igual que en los ADC, sin embargo, se entiende en voltaje o porcentaje del Fs (FONDO DE ESCALA) para Fs = 15v.
 
 ![image](https://github.com/user-attachments/assets/9e483466-f0f3-44de-b592-2adaeac2c5f6)
 
-Figura 7. Tabla de valores posibles para una resolución de 4 bits.
+Tabla 2. Tabla de valores posibles para una resolución de 4 bits.
+
+
 
 Se originan valores de tipo binario a cada uno de los valores de la cuantización, los valores a uso los define el diseñador de acuerdo con el tipo de información obtenida en la cuantización, se tiene presente y sin dejar de lado que para los métodos de conversión se tienen 2 métodos de gran uso como los resistores ponderados de fácil configuración, pero no muy exactos y por otro lado se cuenta con la red en escalera R – 2R el cual es un poco más complicado de configurar, pero es más exacto.
 
 ![image](https://github.com/user-attachments/assets/c941b183-82ed-4a82-a418-4850f445ac36)
 
-Figura 8. Tabla de valores posibles para una resolución de 4 bits.
+Figura 6. Proceso de Cuantificación.
+
+![image](https://github.com/user-attachments/assets/41bb0648-6ffd-4e92-ad71-811ceef336f0)
+
+Tabla 3. 
 
 ## 5. Ecuaciones
 
