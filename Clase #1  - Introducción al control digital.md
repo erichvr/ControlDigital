@@ -12,9 +12,9 @@ Figura 1. Señal analógica
 
 >🔑 *CUANTIZACIÓN:* La señal análoga se convierte en una serie de valores que corresponden a cada una de las medidas tomadas en el muestreo.
 
-![image](https://github.com/user-attachments/assets/d5f56f24-9d13-41c4-a994-476908ec6e7c)
+![image](https://github.com/user-attachments/assets/c941b183-82ed-4a82-a418-4850f445ac36)
 
-Figura 2. Sistema lazo cerrado
+Figura 2. Proceso de Cuantificación.
 
 ![image](https://github.com/user-attachments/assets/8d83e862-6bec-4aba-bedb-6e89006b7bd8)
 
@@ -61,17 +61,15 @@ La resolución depende de los bits de representación al igual que en los ADC, s
 
 Tabla 2. Tabla de valores posibles para una resolución de 4 bits.
 
-
-
 Se originan valores de tipo binario a cada uno de los valores de la cuantización, los valores a uso los define el diseñador de acuerdo con el tipo de información obtenida en la cuantización, se tiene presente y sin dejar de lado que para los métodos de conversión se tienen 2 métodos de gran uso como los resistores ponderados de fácil configuración, pero no muy exactos y por otro lado se cuenta con la red en escalera R – 2R el cual es un poco más complicado de configurar, pero es más exacto.
-
-![image](https://github.com/user-attachments/assets/c941b183-82ed-4a82-a418-4850f445ac36)
-
-Figura 6. Proceso de Cuantificación.
 
 ![image](https://github.com/user-attachments/assets/41bb0648-6ffd-4e92-ad71-811ceef336f0)
 
-Tabla 3. 
+Tabla 3. Resolución DAC
+
+![image](https://github.com/user-attachments/assets/fd2710ab-fe12-46e2-b659-a26fdd150360)
+
+Tabla 3. Resistencia ponderada
 
 ## 5. Ecuaciones
 
@@ -83,59 +81,39 @@ $$E_0 = -R_f (\frac{E_r}{R} + \frac{0}{2R} + \frac{0}{4R}) $$
 
 $$E_0 = \frac{R_f*E_r}{R} $$
 
-La red en escalera R-2R es un tipo de DAC m´as complicada de configurar que los resistores ponderados, pero ofrece mayor exactitud. Utiliza solo dos valores de resistencia (R y 2R), lo que mejora la precisi´on y la consistencia, reduciendo la dependencia de las tolerancias de los componentes.
+La red en escalera R-2R es un tipo de DAC más complicada de configurar que los resistores ponderados, pero ofrece mayor exactitud. Utiliza solo dos valores de resistencia (R y 2R), lo que mejora la precisi´on y la consistencia, reduciendo la dependencia de las tolerancias de los componentes.
 
 $$V_0 = -(\frac{R_f}{R}) (\frac{V_0}{16} + \frac{V_1}{8} + \frac{V_2}{4} + \frac{V_3}{2}) $$
 
 $$V_0 = -(\frac{R_f*V_ref}{R}) (\frac{B_0}{16} + \frac{B_1}{8} + \frac{B_2}{4} + \frac{B_3}{2}) $$
 
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
-
-💡**Ejemplo 2:**
-
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
-
-## 7. Tablas
-En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
-
-💡**Ejemplo 3:** 
-
-| **Resultado** | **x = número de intentos hasta primer éxito** |
-|---------------|-----------------------------------------------|
-|       S       |                       1                       |
-|       FS      |                       2                       |
-|      FFS      |                       3                       |
-|      ...      |                      ...                      |
-|    FFFFFFS    |                       7                       |
-|      ...      |                      ...                      |
-
-Tabla 1. Tabla de ejemplo
-
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
-
-## 8. Código
-Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
-
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
-
 ## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
+📚 Ejercicio 1:
+* Señal analógica: [0, 10] V
+* Bits representación: 3 bits
+* $$2^3 = 8 $$ posibles símbolos
+* Rango analógico: $$ 10 - 0 = 10V $$
+* Representación: $$ \frac{4}{8} * 10V = 5𝑉 $$
+Realmente son: $$2^3 - 1 = 7 $$ posibles símbolos porque se gasta un símbolo representando el 0V.
+
+📚 Ejercicio 2:
+* Señal analógica: [0, 5] V
+* Bits representación: 4 bits
+* $$2^4 = 16 $$ posibles símbolos
+* Rango analógico: $$ 5 - 0 = 5V $$
+* Representación: $$ \frac{10}{16} * 5V = 3.125𝑉 $$
+Realmente son: $$2^4 - 1 = 15 $$ posibles símbolos porque se gasta un símbolo representando el 0V.
 
 ## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
+En esta primera clase de Introducción al Control Digital, se han abordado los conceptos fundamentales que distinguen las señales analógicas de las digitales, así como los procesos clave para convertir una señal continua en una señal digital útil para sistemas de control. Específicamente, se ha aprendido sobre el muestreo y la cuantización, dos procesos críticos en la digitalización de señales, que permiten transformar una señal analógica continua en una secuencia de valores discretos que pueden ser procesados por un controlador digital.
+
+Se discutieron los tiempos involucrados en el muestreo, como el tiempo de adquisición (Ta), tiempo de apertura (Tp), y tiempo de establecimiento (Ts), que son fundamentales para entender cómo un sistema de adquisición de datos captura y procesa la información de una señal analógica.
+
+Asimismo, se exploró la conversión entre señales digitales y analógicas, entendiendo la importancia de la resolución en un Convertidor Digital-Analógico (DAC) y cómo esta afecta la precisión y exactitud de la señal convertida. Se destacaron dos métodos para implementar DACs: los resistores ponderados y la red en escalera R-2R, cada uno con sus ventajas y limitaciones en términos de configuración y precisión.
 
 ## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+[1] "Sistemas causales y no causales," Blog ESPOL, 2016. [Enlace: http://blog.espol.edu.ec/telg1001/sistemas-causales-y-no-causales/]
+
+[2] J. Pérez, Sistemas Causales y No Causales. Digitalia Publishing, 2022. [Enlace: https://www.digitaliapublishing.com/a/130029]
+
+[3] "Métodos Iterativos," Scribd, 2018. [Enlace: https://es.scribd.com/document/390484476/Metodos-Iterativos]
