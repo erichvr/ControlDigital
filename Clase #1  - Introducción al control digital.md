@@ -27,19 +27,33 @@ El movimiento del interruptor puede crear una capacitancia parásita, la cual a 
 ![image](https://github.com/user-attachments/assets/047a26d5-eea5-4dd9-a178-79249492b4af)
 
 ![image](https://github.com/user-attachments/assets/5587ffa2-b009-450a-84ff-34822580d910)
+Figura 3. Tiempo de muestreador
 
 
-## 4. Ejemplos
 💡Ejemplo:
 * Señal analógica: [0,3] V
 * Bits representación: 2 bits
-* 22 = 4 posibles símbolos
+* 2*2 = 4 posibles símbolos
 * Rango analógico: 3-0 = 3V
 * Representación: 3/4 = 0,75𝑉
 
+Realmente son 2𝑟 − 1 posibles símbolos porque se gasta un símbolo representando el 0V
+![image](https://github.com/user-attachments/assets/04d20d00-9ed8-4ee1-ae2c-6fabb033dbdd)
+Figura 4. Tabla de valores posbles
 
-## 5. Ecuaciones
-Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
+## 3. CONVERSOR DIGITAL / ANALÓGICO: 
+Es un dispositivo que genera correspondencia uno a uno entre valores digitales y valores analógicos. Además, se tiene en cuenta para el rengo completo de la entrada digital, existen 2 valores analógicos correspondientes, diferentes incluyendo el cero (0).
+
+![image](https://github.com/user-attachments/assets/d4fde933-3700-4cc9-9de4-14cd9ccbffd0)
+Figura 5. Diagrama de bloques de un sistema de adquisición y procesamiento de datos.
+
+## 4. RESOLUCIÓN DAC: 
+La resolución depende de los bits de representación al igual que en los ADC, sin embargo, se entiende en voltaje o porcentaje del Fs (FONDO DE ESCALA) para Fs = 15v.
+
+![image](https://github.com/user-attachments/assets/9e483466-f0f3-44de-b592-2adaeac2c5f6)
+Figura 6. Tabla de valores posibles para una resolución de 4 bits.
+
+Se originan valores de tipo binario a cada uno de los valores de la cuantización, los valores a uso los define el diseñador de acuerdo con el tipo de información obtenida en la cuantización, se tiene presente y sin dejar de lado que para los métodos de conversión se tienen 2 métodos de gran uso como los resistores ponderados de fácil configuración, pero no muy exactos y por otro lado se cuenta con la red en escalera R – 2R el cual es un poco más complicado de configurar, pero es más exacto.
 
 💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
 
