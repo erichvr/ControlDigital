@@ -72,9 +72,27 @@ $$𝑓(𝑘+𝑛) 𝑜 𝑓(𝑘-𝑛)$$
 
 ### 4.2.1 Atraso
 ![image](https://github.com/user-attachments/assets/7a5001b5-ada4-4173-8e5c-e56a27ac910f)
+>Figura 4. Ilustración del atraso de una señal. 
 
+![image](https://github.com/user-attachments/assets/86cbe15b-2428-41b6-8d6c-ea67bc01aa28)
+>Figura 5. Transformada Z en un atraso
+
+*	ATRASO = Negativo
+*	ADELANTO = Positivo
 
 ### 4.2.2 Adelanto
+![image](https://github.com/user-attachments/assets/24ae2384-0568-476c-a050-94605bd5e0fe)
+>Figura 6. Ilustración del adelanto de una señal. 
+
+![image](https://github.com/user-attachments/assets/59807c50-79c2-41f5-8487-244f3f832041)
+>Figura 7. Transformada Z en un adelanto
+
+## 5. Función de trasferencia discreta
+### 5.1 Funciones de transferencia en el dominio z
+Al igual que en tiempo continuo, en tiempo discreto es posible obtener una representación de función de transferencia en el dominio Z, teniendo en cuenta que tiene múltiples ventajas como poder identificar el comportamiento del sistema desde la identificación de parámetros.
+
+![image](https://github.com/user-attachments/assets/c40786bc-ac43-4a0a-9725-e87438e9ad57)
+* Donde $$𝑥∗(𝑡) 𝑦 𝑦∗ 𝑡$$ son las señales x(t) y y(t) muestreadas.
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
