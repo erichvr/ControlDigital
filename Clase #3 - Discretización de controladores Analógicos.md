@@ -10,10 +10,11 @@ Para control, esto se logra buscando la equivalencia entre el espacio de Laplace
 >Figura 1 y 2. Discretización de una señal en tiempo continuo, muestreada y digitalizada.
 
 ## ¿Qué métodos se utilizan para la discretización de señales analógicas?
-* *Método de invarianza al pulso*
+### *Método de invarianza al pulso*
 >🔑 A una señal cualquiera se le aplica una señal impulso, deseando que el comportamiento en dicho momento sea el mismo para la señal continua y discreta.
 
 ![image](https://github.com/user-attachments/assets/c21898ec-7306-43c5-bd04-ecef6c640340)
+
 ![image](https://github.com/user-attachments/assets/a5c589cb-a600-452b-9793-a3f88a3a46e1)
 >Figura 3 y 4. Aplicación del impulso y transformada Z de la función.
 
@@ -21,19 +22,15 @@ Al tratarse de discretizar una señal, buscamos obtener su equivalente en el esp
 1. Se obtiene la equivalencia en tiempo continuo a la señal en el dominio de Laplace.
 2. Se traslada la función de tiempo continuo a tiempo discreto.
 3. Se aplica transformada Z para obtener la función de transferencia en términos de Z.
-	*De acuerdo a la forma de la FT en el Dominio de Laplace, es posible obtener su equivalencia en el Dominio Z mediante las transformadas rápidas.
+*De acuerdo a la forma de la FT en el Dominio de Laplace, es posible obtener su equivalencia en el Dominio Z mediante las transformadas rápidas.
+
+>🔑 *¿Para qué sirve la función de transferencia?*
+Sirve para relacionar la salida del sistema con respecto a las variables de entrada que nos permita controlar un sistema. Es decir, obtiene el comportamiento dinámico del sistema para así controlarlo.
 
 
-## 2. Definiciones
-Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
->🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
+💡*Ejemplo:*
+L^{-1} \{ c(s) \} = 2 \cdot L^{-1} \left\{ \frac{(s-1) + 1}{(s-1)^2 + 4} \right\}
 
-## 3. Subsecciones
-Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
-### 3.1. Título de subsecciones
-Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
-### 3.2. Numeración de subsecciones
-Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
