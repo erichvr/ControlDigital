@@ -31,11 +31,11 @@ El movimiento del interruptor puede crear una capacitancia parásita, la cual a 
 
 ## 4. Ejemplos
 💡Ejemplo:
-• Señal analógica: [0,3] V
-• Bits representación: 2 bits
-• 22 = 4 posibles símbolos
-• Rango analógico: 3-0 = 3V
-• Representación: 3/4 = 0,75𝑉
+* Señal analógica: [0,3] V
+* Bits representación: 2 bits
+* 22 = 4 posibles símbolos
+* Rango analógico: 3-0 = 3V
+* Representación: 3/4 = 0,75𝑉
 
 
 ## 5. Ecuaciones
