@@ -81,6 +81,8 @@ La red en escalera R-2R es un tipo de DAC m´as complicada de configurar que los
 
 $$V_0 = -(\frac{R_f}{R}) (\frac{V_0}{16} + \frac{V_1}{8} + \frac{V_2}{4} + \frac{V_3}{2}) $$
 
+$$V_0 = -(\frac{R_f*V_ref}{R}) (\frac{B_0}{16} + \frac{B_1}{8} + \frac{B_2}{4} + \frac{B_3}{2}) $$
+
 ## 6. Figuras
 Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
 * Primero escribimos ![]().
