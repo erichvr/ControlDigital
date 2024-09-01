@@ -7,10 +7,21 @@ Para control, esto se logra buscando la equivalencia entre el espacio de Laplace
 ![image](https://github.com/user-attachments/assets/52a6df84-4531-4adf-9283-799bf1829133)
 ![image](https://github.com/user-attachments/assets/39480da1-eeea-472d-82de-2c6700f6a89c)
 
->Figura 1 y 2.Discretización de una señal en tiempo continuo, muestreada y digitalizada.
+>Figura 1 y 2. Discretización de una señal en tiempo continuo, muestreada y digitalizada.
 
 ## ¿Qué métodos se utilizan para la discretización de señales analógicas?
 * *Método de invarianza al pulso*
+>🔑 A una señal cualquiera se le aplica una señal impulso, deseando que el comportamiento en dicho momento sea el mismo para la señal continua y discreta.
+
+![image](https://github.com/user-attachments/assets/c21898ec-7306-43c5-bd04-ecef6c640340)
+![image](https://github.com/user-attachments/assets/a5c589cb-a600-452b-9793-a3f88a3a46e1)
+>Figura 3 y 4. Aplicación del impulso y transformada Z de la función.
+
+Al tratarse de discretizar una señal, buscamos obtener su equivalente en el espacio Z.
+1. Se obtiene la equivalencia en tiempo continuo a la señal en el dominio de Laplace.
+2. Se traslada la función de tiempo continuo a tiempo discreto.
+3. Se aplica transformada Z para obtener la función de transferencia en términos de Z.
+	*De acuerdo a la forma de la FT en el Dominio de Laplace, es posible obtener su equivalencia en el Dominio Z mediante las transformadas rápidas.
 
 
 ## 2. Definiciones
