@@ -131,6 +131,10 @@ El sistema da respuesta solamente al haber aplicado una entrada teniendo en cuen
 ## 7. TIEMPO MUERTO EN SISTEMAS DISCRETOS
 El tiempo muerto es más fácil de medir en sistemas discretos comparando el grado de los polinomios de la función de transferencia.
 
+$$EXCESO POLO - ZERO$$
+$$R = M - N$$
+
+Se sabe que el valor de r es la cantidad de muestras que hay de tiempo muerto, si r = 0 es sistema es bipropio.
 
 ## 5. Ecuaciones
 Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
