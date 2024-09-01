@@ -1,18 +1,33 @@
-# Titulo de la clase
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+# Clase #1 - Introducción al control digital
+Existen señales analógicas y señales digitales, se debe tener en cuenta que se cuenta con señales continuas que pueden tomar cualquier valor en el dominio del tiempo sin dejar de lado que tienen dos posibles valores o estados.
 
-## 2. Definiciones
-Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
->🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
+![image](https://github.com/user-attachments/assets/cf1ffdd2-b683-4207-91e0-7b33be5e9daf)
 
-## 3. Subsecciones
-Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
-### 3.1. Título de subsecciones
-Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
-### 3.2. Numeración de subsecciones
-Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
+Figura 1. Señal analógica
+
+
+## 1. Definiciones
+
+>🔑 *MUESTREO:* Da la opción de medir valores de voltaje cada cierto tiempo, se mide como el número de veces que se logra en 1 segundo por lo tanto las unidades son en HZ, más, sin embargo, el tiempo de muestreo se reparte con la frecuencia de muestreo. Se tiene presente que entre más alta sea la tasa de muestreo, más información se está procesando y si la tasa es muy baja se puede perder bastante información. El muestreo puede ser periódico (único) de tasa múltiple o aleatoria.
+
+>🔑 *CUANTIZACIÓN:* La señal análoga se convierte en una serie de valores que corresponden a cada una de las medidas tomadas en el muestreo.
+
+![image](https://github.com/user-attachments/assets/d5f56f24-9d13-41c4-a994-476908ec6e7c)
+
+Figura 2. Sistema lazo cerrado
+
+## 2. TIEMPO DE MUESTREADOR – RETENEDOR
+### 2.1. Ta (TIEMPO DE ADQUISICIÓN): 
+Es el tiempo que transcurre desde que se da la orden de muestreo hasta que se retiene dentro de cierto margen de tolerancia.
+### 2.2. Tp (TIEMPO DE APERTURA):
+Es el tiempo que transcurre desde que se inicia la retención hasta que abre el muestreador.
+### 2.3. Ts (TIEMPO DE ESTABLECIMIENTO): 
+El movimiento del interruptor puede crear una capacitancia parásita, la cual a su vez puede producir un transitorio.
+
+![image](https://github.com/user-attachments/assets/047a26d5-eea5-4dd9-a178-79249492b4af)
+
+![image](https://github.com/user-attachments/assets/5587ffa2-b009-450a-84ff-34822580d910)
+
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
