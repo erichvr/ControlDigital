@@ -22,6 +22,7 @@ Al tratarse de discretizar una señal, buscamos obtener su equivalente en el esp
 1. Se obtiene la equivalencia en tiempo continuo a la señal en el dominio de Laplace.
 2. Se traslada la función de tiempo continuo a tiempo discreto.
 3. Se aplica transformada Z para obtener la función de transferencia en términos de Z.
+
 *De acuerdo a la forma de la FT en el Dominio de Laplace, es posible obtener su equivalencia en el Dominio Z mediante las transformadas rápidas.
 
 >🔑 *¿Para qué sirve la función de transferencia?*
@@ -36,7 +37,7 @@ Sirve para relacionar la salida del sistema con respecto a las variables de entr
 ### *Método de invarianza al paso*
 Para este caso, lo que se opta por hacer es aplicar a nuestra señal discretizada y sin discretizar, un escalón unitario. Sí la respuesta es la misma para ambas señales, entonces la señal es invariable en el tiempo.
 
-$$u(t)c(t); /frac{1}{s} c(s); /frac{z}{z-1} c(z)$$
+$$u(t)c(t); \frac{1}{s} c(s); \frac{z}{z-1} c(z)$$
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
