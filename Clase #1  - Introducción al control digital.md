@@ -71,7 +71,7 @@ Figura 8. Tabla de valores posibles para una resolución de 4 bits.
 
 Los resistores ponderados en un DAC son fáciles de configurar y económicos, pero tienen baja exactitud debido a la dependencia de la precisión de las re sistencias, lo que limita su uso en aplicaciones que requieren alta precisión.
 
-$$E_0$$
+$$E_0 = -R_f (\frac{V_a}{R} + \frac{V_b}{2R} + \frac{V_c}{4R} $$
 
 $$R=\frac{V}{I}$$
 
