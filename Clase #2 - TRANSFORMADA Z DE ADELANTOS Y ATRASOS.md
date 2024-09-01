@@ -38,14 +38,29 @@ $$ y(k+1) = -0.1*y(k)^2$$
 Existen 2 soluciones para las ecuaciones en diferencias, estas son:
 
 o	Métodos iterativos
+
 o	Transformada Z
 
-## 3. Subsecciones
-Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
-### 3.1. Título de subsecciones
-Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
-### 3.2. Numeración de subsecciones
-Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
+## 3. Transformada Z
+### 3.1. Ecuación en diferencias
+
+$$b_nu(k) + b_(n-1) u(k-1) +...+ b_0 u(k-n) = y(k) + a_(n-1)y(k-1) +...+ a_0 y(k-n)$$
+
+* La solución numérica da los valores de “y” para un numero finito de muestras, sin embargo, no permite identificar características generales del funcionamiento del sistema.
+* La solución por transformada Z permite obtener una expresión matemática para dar la solución de la ecuación en cualquier muestra.
+
+![image](https://github.com/user-attachments/assets/04fadd6c-a139-4c3d-bc34-db2712121f8f)
+
+>Figura 2. Transformada de Laplace y transformada Z
+
+## 4. Relación Z y L
+
+![image](https://github.com/user-attachments/assets/5b080757-e095-4e76-9c60-b32483e465eb)
+
+>Figura 3. Demostración matemática del muestreo de una señal continua con la señal impulso
+
+### 4.1 SOLUCIÓN DE ECUACIONES EN DIFERENCIAS POR TRANSFORMADA Z
+Es un procedimiento similar a la solución de ecuaciones diferenciales en donde se le aplica si o si la transformada Z a la ecuación sin dejar de lado que se despeja la variable desconocida o la salida del sistema para así aplicar la transformada Z inversa de $$Z^-1$$.
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
