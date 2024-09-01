@@ -22,12 +22,15 @@ $$ B_n*U(k) + B_(n-1) * U_(k-1) + ... + B_o * U(k-n) = y(k)+a_(n-1)*y(k-1)+...+a
 ### 2.2 CARACTERISTICAS ECUACIONES EN DIFERENCIAS 
 
 *Las ecuaciones en diferencias pueden ser homogéneas, lineales, invariantes en el tiempo.
+
 $$ y(k+2) + 0.8y(k+1) + 0.7y(k)U(k) = 0$$
 
 *Lineal, invariante en el tiempo, no homogénea.
+
 $$ y(k+4) + sen(0.4k)y(k+1) + 0.3y(k) = 0$$
 
 *Lineal, variante en el tiempo, homogénea.
+
 $$ y(k+1) = -0.1*y(k)^2$$
 
 >🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
