@@ -113,6 +113,7 @@ $$z = \frac{1+ \frac{Ts}{2}}{1- \frac{Ts}{2}}$$
 Con estas equivalencias, es posible discretizar una función de Laplace a Z.
 
 ## 9. Ejercicios
+*Los ejemplos de los métodos también son ejercicios ya que se desarrollan paso a paso.
 📚 Ejercicio invarianza al pulso:
 
 ![image](https://github.com/user-attachments/assets/1b41b7b1-26dd-4abd-a534-f59cc8b9a6bc)
