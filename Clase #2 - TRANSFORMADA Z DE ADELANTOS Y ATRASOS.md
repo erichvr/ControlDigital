@@ -60,7 +60,21 @@ $$b_nu(k) + b_(n-1) u(k-1) +...+ b_0 u(k-n) = y(k) + a_(n-1)y(k-1) +...+ a_0 y(k
 >Figura 3. Demostración matemática del muestreo de una señal continua con la señal impulso
 
 ### 4.1 SOLUCIÓN DE ECUACIONES EN DIFERENCIAS POR TRANSFORMADA Z
-Es un procedimiento similar a la solución de ecuaciones diferenciales en donde se le aplica si o si la transformada Z a la ecuación sin dejar de lado que se despeja la variable desconocida o la salida del sistema para así aplicar la transformada Z inversa de $$Z^-1$$.
+Es un procedimiento similar a la solución de ecuaciones diferenciales en donde se le aplica si o si la transformada Z a la ecuación sin dejar de lado que se despeja la variable desconocida o la salida del sistema para así aplicar la transformada Z inversa de $$Z^(-1)$$.
+
+### 4.2 TRANSFORMADA Z IMPORTANTES EN CONTROL
+En las ecuaciones en diferencias tenemos términos del tipo:
+
+$$𝑓(𝑘+𝑛) 𝑜 𝑓(𝑘-𝑛)$$
+
+* Donde n es el número de muestra que se desplaza la función.
+* Entonces la transformada Z de este tipo de términos son muy importantes en el área de control.
+
+### 4.2.1 Atraso
+![image](https://github.com/user-attachments/assets/7a5001b5-ada4-4173-8e5c-e56a27ac910f)
+
+
+### 4.2.2 Adelanto
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
