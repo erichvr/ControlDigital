@@ -11,7 +11,10 @@ $$ F(t) = F(kT) $$
 >Figura 1. Función en tiempo continuo y discreto
 
 
-## 2. Definiciones
+## 2. REPRESENTACIÓN MATEMÁTICA DE LOS SISTEMAS
+### 2.1 Ecuación en diferencias
+
+$$ B_nU(k)+B_n-1
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
 >🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
 
