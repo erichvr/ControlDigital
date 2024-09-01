@@ -32,6 +32,7 @@ Sirve para relacionar la salida del sistema con respecto a las variables de entr
 💡*Ejemplo:*
 
 ![image](https://github.com/user-attachments/assets/8ca56560-b6c3-4d6f-8c15-2687fb190da9)
+
 >Figura 5. Ejercicio de invarianza al pulso.
 
 ### *Método de invarianza al paso*
@@ -39,7 +40,38 @@ Para este caso, lo que se opta por hacer es aplicar a nuestra señal discretizad
 
 $$u(t)c(t); \frac{1}{s} c(s); \frac{z}{z-1} c(z)$$
 
-$$C(z)= \frac{z}{z-1} TZ{L^(-1){C(s) \frac{1}{s}}}$$
+![image](https://github.com/user-attachments/assets/d2a46060-e3b2-4044-b05e-6839979fbb2c)
+
+>Figura 6. Transformadas necesarias para obtener la FT en dominio Z.
+
+Esta igualdad se debe cumplir, obteniendo la FT en el dominio Z a partir de:
+1. Aplicarle a la función de transferencia en el dominio S un escalón.
+2. Obtener la función en tiempo continuo y se traslada a tiempo discreto (Esto se hace indirectamente al aplicar Transformada Z a la transformada inversa de Laplace).
+3. Aplicar transformada para obtener la equivalencia en el dominio z.
+4. Revertir el escalón unitario multiplicando por el inverso.
+5. Esto nos debe dar la equivalente en el espacio z de la FT original, demostrando la condición de invariabilidad en el tiempo.
+
+💡*Ejemplo:*
+
+![image](https://github.com/user-attachments/assets/5c89d2ce-98db-481e-9f37-c96264055822)
+
+>Figura 7. Ejercicio de invarianza al paso.
+
+### *Método Euler Adelante*
+Se tiene como aproximación de la derivada lo siguiente:
+![image](https://github.com/user-attachments/assets/e9735e29-6ed3-4a15-ab39-8cc56e404526)
+
+>Figura 8. Diferencial de la muestra futura y actual.
+
+Esto nos relaciona la distancia entre la amplitud de la siguiente muestra (predicha) con la amplitud de la muestra actual de nuestra señal, sobre el tiempo de muestreo T. Esto calcula la derivada a partir de la predicción de la señal y su comportamiento actual con respecto al tiempo de muestreo.
+	
+Según las propiedades de la transformada de Laplace, la transformada de la derivada de una función es:
+![image](https://github.com/user-attachments/assets/365aefeb-3ffa-4536-8ee7-a863f51a40e4)
+
+>Figura 9. Equivalencia de la derivada en Laplace.
+
+Al aplicar la transformada Z a la derivada discreta, obtenemos:
+$$\[TZ\left\{\frac{x(k+1) - x(k)}{T}\right\} = \left(zX(z) - X(z)\right) \frac{1}{T} = \frac{(z-1)}{T} X(z)\]$$
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
