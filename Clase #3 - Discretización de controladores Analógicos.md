@@ -39,6 +39,8 @@ Para este caso, lo que se opta por hacer es aplicar a nuestra señal discretizad
 
 $$u(t)c(t); \frac{1}{s} c(s); \frac{z}{z-1} c(z)$$
 
+$$C(z)= \frac{z}{z-1} TZ{L^(-1){C(s) \frac{1}{s}}}$$
+
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
 
