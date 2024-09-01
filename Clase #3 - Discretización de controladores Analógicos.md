@@ -16,6 +16,7 @@ Para control, esto se logra buscando la equivalencia entre el espacio de Laplace
 ![image](https://github.com/user-attachments/assets/c21898ec-7306-43c5-bd04-ecef6c640340)
 
 ![image](https://github.com/user-attachments/assets/a5c589cb-a600-452b-9793-a3f88a3a46e1)
+
 >Figura 3 y 4. Aplicación del impulso y transformada Z de la función.
 
 Al tratarse de discretizar una señal, buscamos obtener su equivalente en el espacio Z.
@@ -59,6 +60,7 @@ Esta igualdad se debe cumplir, obteniendo la FT en el dominio Z a partir de:
 
 ### *Método Euler Adelante*
 Se tiene como aproximación de la derivada lo siguiente:
+
 ![image](https://github.com/user-attachments/assets/e9735e29-6ed3-4a15-ab39-8cc56e404526)
 
 >Figura 8. Diferencial de la muestra futura y actual.
@@ -66,12 +68,22 @@ Se tiene como aproximación de la derivada lo siguiente:
 Esto nos relaciona la distancia entre la amplitud de la siguiente muestra (predicha) con la amplitud de la muestra actual de nuestra señal, sobre el tiempo de muestreo T. Esto calcula la derivada a partir de la predicción de la señal y su comportamiento actual con respecto al tiempo de muestreo.
 	
 Según las propiedades de la transformada de Laplace, la transformada de la derivada de una función es:
+
 ![image](https://github.com/user-attachments/assets/365aefeb-3ffa-4536-8ee7-a863f51a40e4)
 
 >Figura 9. Equivalencia de la derivada en Laplace.
 
 Al aplicar la transformada Z a la derivada discreta, obtenemos:
-$$\[TZ\left\{\frac{x(k+1) - x(k)}{T}\right\} = \left(zX(z) - X(z)\right) \frac{1}{T} = \frac{(z-1)}{T} X(z)\]$$
+
+![image](https://github.com/user-attachments/assets/07684900-b7a3-454a-9ac7-83e09e2c8552)
+
+Asumiendo que el comportamiento de la función en el dominio de Laplace y en el dominio de Z es el mismo, se puede aproximar su equivalencia así:
+
+$$sX(s) ≈ \frac{z-1}{T} X(z)$$
+
+$$s ≈ \frac{z-1}{T}$$
+
+
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
