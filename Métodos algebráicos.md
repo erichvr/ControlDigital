@@ -21,6 +21,7 @@ Si $$G(z)$$ tiene polos fuera del circulo unitario o 2 o más en $$z = -1$$, ent
 Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida entonces conociendo la ubicación de los polos que desea, a partir de la respuesta deseada, se puede representar en un polinomio característico en donde es posible obtener la función de transferencia del controlador $$C(z)$$ que asegura dicho comportamiento además se debe tener en cuenta que para aplicar una acción proporcional, se debe primero diseñar un controlador de acción proporcional para ubicar los polos del sistema en lazo cerrado en:
 
 💡Ejemplo
+
 $$P1=0.91+j0.23;  $$
 $$P2=0.91-j0.23 $$
 
