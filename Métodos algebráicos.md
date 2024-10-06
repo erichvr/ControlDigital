@@ -7,7 +7,9 @@ Son métodos que utilizan herramientas algebraicas para obtener un determinado c
 Figura 1. Diagrama de bloques de un sistema de control discreto.
 
 ## 1. Igualación de modelo
-Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida, entonces conociendo la respuesta que se desea obtener, representada en una función de transferencia de lazo cerrado Go (z) además es posible obtener la función de transferencia del controlador C(z) que asegura dicho comportamiento.
+Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida, entonces conociendo la respuesta que se desea obtener, representada en una función de transferencia de lazo cerrado  $$Go(z)$$ además es posible obtener la función de transferencia del controlador $$C(z)$$ que asegura dicho comportamiento.
+
+Si $$G(z)$$ tiene polos fuera del circulo unitario o 2 o más en z= -1, entonces la retroalimentación unitaria no puede ser implementada, cualquier G(z); debido a que los controladores podrían ser no implementables.
 
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
