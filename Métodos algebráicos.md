@@ -22,11 +22,13 @@ Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida entonces cono
 
 💡Ejemplo
 
-$$P1=0.91+j0.23; $$
+$$P1=0.91+j0.23 $$
 
 $$P2=0.91-j0.23 $$
 
+Entonces el polinomio característico deseado en lazo cerrado es:
 
+$$(z-0.91+j0.23)(z-0.91-j0.23)=z^2-1.82z+0.881$$
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
