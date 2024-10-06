@@ -6,6 +6,7 @@ Son métodos que utilizan herramientas algebraicas para obtener un determinado c
 
 Figura 1. Diagrama de bloques de un sistema de control discreto.
 
+
 ## 1. Igualación de modelo
 Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida, entonces conociendo la respuesta que se desea obtener, representada en una función de transferencia de lazo cerrado  $$Go(z)$$ además es posible obtener la función de transferencia del controlador $$C(z)$$ que asegura dicho comportamiento.
 
@@ -14,8 +15,16 @@ Si $$G(z)$$ tiene polos fuera del circulo unitario o 2 o más en $$z = -1$$, ent
   ### Consideraciones de implementación
   Los compensadores deben ser causales, además de que el modelo objetivo debe ser estable, y no deben       resultar cancelaciones $$polo – zero =r≤ro$$ sin dejar de lado que los zeros (FASE NO MINIMA) de la planta serán retenidos en lazo cerrado.
 
+
+
 ## 2. Igualación de coeficientes
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida entonces conociendo la ubicación de los polos que desea, a partir de la respuesta deseada, se puede representar en un polinomio característico en donde es posible obtener la función de transferencia del controlador $$C(z)$$ que asegura dicho comportamiento además se debe tener en cuenta que para aplicar una acción proporcional, se debe primero diseñar un controlador de acción proporcional para ubicar los polos del sistema en lazo cerrado en:
+
+💡Ejemplo
+$$P1=0.91+j0.23;  $$
+$$P2=0.91-j0.23 $$
+
+
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
