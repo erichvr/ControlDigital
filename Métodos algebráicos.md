@@ -22,8 +22,8 @@ Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida entonces cono
 
 💡Ejemplo
 
-$$P1=0.91+j0.23;  $$
-$$P2=0.91-j0.23 $$
+$$P1=0.91+j0.23;
+P2=0.91-j0.23 $$
 
 
 
