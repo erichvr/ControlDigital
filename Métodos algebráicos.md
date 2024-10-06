@@ -2,11 +2,12 @@
 
 Son métodos que utilizan herramientas algebraicas para obtener un determinado comportamiento en el sistema en lazo cerrado, la base fundamental de estos métodos es modificar la función de transferencia en lazo cerrado de acuerdo a una respuesta deseada. Existen dos enfoques: por igualación de modelo y por igualación de coeficientes.
 
-![image](https://github.com/user-attachments/assets/1cffeb00-64ad-406d-90fa-b0cc48ba9d35)
+![Diagrama de bloques de un sistema de control discreto](https://github.com/user-attachments/assets/1cffeb00-64ad-406d-90fa-b0cc48ba9d35)
 
+Figura 1. Diagrama de bloques de un sistema de control discreto.
 
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+## 1. Igualación de modelo
+Sabiendo que G(z) es la función de lazo abierto y es conocida, entonces conociendo la respuesta que se desea obtener, representada en una función de transferencia de lazo cerrado Go (z) además es posible obtener la función de transferencia del controlador C(z) que asegura dicho comportamiento.
 
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
