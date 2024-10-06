@@ -9,9 +9,12 @@ Figura 1. Diagrama de bloques de un sistema de control discreto.
 ## 1. Igualación de modelo
 Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida, entonces conociendo la respuesta que se desea obtener, representada en una función de transferencia de lazo cerrado  $$Go(z)$$ además es posible obtener la función de transferencia del controlador $$C(z)$$ que asegura dicho comportamiento.
 
-Si $$G(z)$$ tiene polos fuera del circulo unitario o 2 o más en z= -1, entonces la retroalimentación unitaria no puede ser implementada, cualquier G(z); debido a que los controladores podrían ser no implementables.
+Si $$G(z)$$ tiene polos fuera del circulo unitario o 2 o más en $$z = -1$$, entonces la retroalimentación unitaria no puede ser implementada, cualquier $$G(z)$$; debido a que los controladores podrían ser no implementables.
 
-## 1. Subtítulos
+  ### Consideraciones de implementación
+  Los compensadores deben ser causales, además de que el modelo objetivo debe ser estable, y no deben       resultar cancelaciones $$polo – zero =r≤ro$$ sin dejar de lado que los zeros (FASE NO MINIMA) de la planta serán retenidos en lazo cerrado.
+
+## 2. Igualación de coeficientes
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
 ## 2. Definiciones
