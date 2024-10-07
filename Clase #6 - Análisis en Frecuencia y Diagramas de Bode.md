@@ -51,7 +51,9 @@ Tabla 2. Análisis de frecuencia y diagrama de bode de una señal
 - Los decibelios dB no son una unidad física, se utilizan como una interpolación de algunas cantidades como ganancia o potencia.
 
   **En el caso de la ganancia**
-  $$A_(dB) = 20 log_(10)(A)$$
+  **En el caso de la ganancia**  
+$$A_{dB} = 20 \log_{10}(A)$$
+
 
 
 
