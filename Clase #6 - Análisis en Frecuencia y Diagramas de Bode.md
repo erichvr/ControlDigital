@@ -80,8 +80,9 @@ Son gráficos obtenidos a partir de los cambios que tiene el sistema en la ampli
 
 ## 3. Ecuación de Overshoot:
 $$
-M_p = \frac{c_(t_p) - c_(\infty)}{c_(\infty)} = e^{-\frac{\pi \zeta}{\sqrt{1 - \zeta^2}}} = e^{-\frac{\pi}{\tan\phi}
+M_p = \frac{c_{(t_p)} - c_{(\infty)}}{c_{(\infty)}} = e^{-\frac{\pi \zeta}{\sqrt{1 - \zeta^2}}} = e^{-\tan(\phi)}
 $$
+
 
 $$
 \phi = \tan^{-1}\left(\frac{\omega_d}{-\sigma}\right)
