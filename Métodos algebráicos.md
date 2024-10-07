@@ -94,10 +94,14 @@ $$Z=0.91$$
 ### 2.3 Función De Transferencia Nuevo Controlador:
 Los coeficientes obtenidos para el controlador son:
 
-$$ A_1 = 1 $$  
-$$ B_0 = -12.99 $$  
-$$ A_0 = -0.911 $$  
-$$ B_1 = 14.23 $$  
+$$ A_1 = 1 $$
 
-**El Controlador Sería:**  
+$$ B_0 = -12.99 $$
+
+$$ A_0 = -0.911 $$
+
+$$ B_1 = 14.23 $$
+
+**El Controlador Sería:**
+
 $$C(z) = \frac{B_0 + B_1 z}{A_0 + A_1 z} = \frac{-12.99 + 14.23 z}{-0.911 + z}$$
