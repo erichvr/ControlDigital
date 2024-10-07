@@ -38,15 +38,20 @@ Para cualquier función de transferencia se puede separar la parte real e imagin
 
 | IMÁGENES                                                                                                                                       | TÍTULO DE LA IMAGEN                                 |
 |------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <img src="https://github.com/user-attachments/assets/456a8cda-494c-4b2b-888d-29b2529d1721" alt="image" width="600"/>                  | DIAGRAMAS DE BODE                                   |
-| <img src="https://github.com/user-attachments/assets/5e7c3694-840c-4803-9cbf-69d2685a00eb" alt="image" width="600"/>                  | DIAGRAMA POLAR                                      |
-| <img src="https://github.com/user-attachments/assets/fe07c182-a11a-4d0f-bfbc-b05836cb3d26" alt="image" width="600"/>                  | ANALISIS FREENCIAL EN TIEMPO DISCRETO               |
-| <img src="https://github.com/user-attachments/assets/3ced2bdf-8d3c-4372-a095-8b8161db49de" alt="image" width="600"/>                  | ANALISIS EN FRECUENCIA T = 0.1 SEG                  |
-| <img src="https://github.com/user-attachments/assets/3bbf5f01-526d-437e-b7e3-27c5eb33d6b2" alt="image" width="600"/>                  | ANALISIS EN FRECUENCIA T = 0.001 SEG                |
-| <img src="https://github.com/user-attachments/assets/26db4e3f-7d99-49f4-905f-568379317af9" alt="image" width="600"/>                  | DIAGRAMAS DE BODE                                   |
-| <img src="https://github.com/user-attachments/assets/ce9c625a-744e-4320-8132-95d912186613" alt="image" width="600"/>                  | EFECTO DE LOS PARAMETROS                            |
+| <img src="https://github.com/user-attachments/assets/456a8cda-494c-4b2b-888d-29b2529d1721" alt="image" width="600"/>                  | **DIAGRAMAS DE BODE**                               |
+| <img src="https://github.com/user-attachments/assets/5e7c3694-840c-4803-9cbf-69d2685a00eb" alt="image" width="600"/>                  | **DIAGRAMA POLAR**                                  |
+| <img src="https://github.com/user-attachments/assets/fe07c182-a11a-4d0f-bfbc-b05836cb3d26" alt="image" width="600"/>                  | **ANALISIS FREENCIAL EN TIEMPO DISCRETO**           |
+| <img src="https://github.com/user-attachments/assets/3ced2bdf-8d3c-4372-a095-8b8161db49de" alt="image" width="600"/>                  | **ANALISIS EN FRECUENCIA T = 0.1 SEG**              |
+| <img src="https://github.com/user-attachments/assets/3bbf5f01-526d-437e-b7e3-27c5eb33d6b2" alt="image" width="600"/>                  | **ANALISIS EN FRECUENCIA T = 0.001 SEG**            |
+| <img src="https://github.com/user-attachments/assets/26db4e3f-7d99-49f4-905f-568379317af9" alt="image" width="600"/>                  | **DIAGRAMAS DE BODE**                               |
+| <img src="https://github.com/user-attachments/assets/ce9c625a-744e-4320-8132-95d912186613" alt="image" width="600"/>                  | **EFECTO DE LOS PARAMETROS**                        |
 
+Tabla 2. Análisis de frecuencia y diagrama de bode de una señal
 
+- Los decibelios dB no son una unidad física, se utilizan como una interpolación de algunas cantidades como ganancia o potencia.
+
+  **En el caso de la ganancia**
+  $$A_dB = 20 log_10 A$$
 
 
 
