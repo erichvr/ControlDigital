@@ -38,8 +38,7 @@ Para cualquier función de transferencia se puede separar la parte real e imagin
 
 | IMAGENES                    | TITULO DE LA IMAGEN                     |
 |-----------------------------------------|------------------------------------------|
-| ![image](https://github.com/user-attachments/assets/456a8cda-494c-4b2b-888d-29b2529d1721)
-                   | TITULO DE LA IMAGEN                     |
+| ![image](https://github.com/user-attachments/assets/456a8cda-494c-4b2b-888d-29b2529d1721)| TITULO DE LA IMAGEN                     |
 
 ---
 
