@@ -35,7 +35,7 @@ Se sabe que para el lazo cerrado se debe calcular la función de transferencia e
 
 Se sabe que:
 
-G(z) = N(z)/D(z)
+$$G(z) = N(z)/D(z)$$
 
 C(z) = B(z)/A(z)
 
