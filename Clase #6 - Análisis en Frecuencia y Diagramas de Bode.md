@@ -73,8 +73,20 @@ $$ v = \frac{2}{T} \tan\left(\frac{\omega T}{2}\right) $$
 
 ---
 
-## 2. Igualación de coeficientes
-Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida entonces conociendo la ubicación de los polos que desea, a partir de la respuesta deseada, se puede representar en un polinomio característico en donde es posible obtener la función de transferencia del controlador $$C(z)$$ que asegura dicho comportamiento además se debe tener en cuenta que para aplicar una acción proporcional, se debe primero diseñar un controlador de acción proporcional para ubicar los polos del sistema en lazo cerrado en:
+## 2. Diagramas de Bode:
+Son gráficos obtenidos a partir de los cambios que tiene el sistema en la amplitud de su ganancia y su ángulo de desface frente a cambios en la frecuencia de la señal de entrada $$G(jv) y <G(jv)$$. Usualmente se presentan en escala logarítmica, en el caso de sistemas discretos es importante tener en cuenta que los compensadores que se diseñen pierden eficacia en frecuencias altas, debido a la transformada W, la aproximación de la transformada W es válida entre 0 y la frecuencia de Nyquist.
+
+---
+
+## 3. Ecuación de Overshoot:
+$$
+M_p = \frac{c(t_p) - c(\infty)}{c(\infty)} = e^{-\frac{\pi \zeta}{\sqrt{1 - \zeta^2}}} = e^{-\tan^{-1} \phi}
+$$
+
+$$
+\phi = \tan^{-1}\left(\frac{\omega_d}{-\sigma}\right)
+$$
+
 
 💡Ejemplo
 
