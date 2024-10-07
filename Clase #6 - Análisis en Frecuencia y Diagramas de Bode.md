@@ -12,7 +12,7 @@ Se verifica su comportamiento en la salida a partir de cambios en la frecuencia 
 - Armónicos igual a la frecuencia que a la entrada
 - Variaciones en amplitud y frecuencia
 
-| $$ A_1 < \phi_1 $$                     | $$ A_2 < \phi_2 $$                       |
+| $$A_1 < \phi_1$$                     | $$A_2 < \phi_2$$                       |
 |-----------------------------------------|------------------------------------------|
 | $$ A_1 \cdot \sin(w_1 K T + \phi_1) $$ | $$ A_2 \cdot \sin(w_2 K T + \phi_2) $$  |
 |                                         |                                          |
