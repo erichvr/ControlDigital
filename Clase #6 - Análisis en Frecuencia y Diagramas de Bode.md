@@ -19,6 +19,7 @@ Se verifica su comportamiento en la salida a partir de cambios en la frecuencia 
 | $$G(s) = \frac{A_2 < \phi_2}{A_1 < \phi_1} = M < \phi$$ |                             |
 | $$M = \frac{A_2}{A_1} \quad \phi = \phi_2 - \phi_1$$ | $$\text{No depende de la frecuencia}$$ |
 
+Tabla 1. Relación entre Amplitudes, Fases y Ganancia en Sistemas Dinámicos.
 
 ### 1.2. Expresar la función de transferencia en términos de la frecuencia
 Se sabe que $$S = j\omega$$ y que la equivalencia de mapeo de polos y ceros es $$z = e^{s t}$$; por lo tanto, para poner la variable $$z$$ en términos de la frecuencia se obtendría:
@@ -31,10 +32,14 @@ Para cualquier función de transferencia se puede separar la parte real e imagin
 
 1. Magnitud y fase con respecto a la frecuencia.
 2. Escala lineal.  
-3. Escala logarítmica <span style="color:red">DECIBELIOS</span>
+3. Escala logarítmica **DECIBELIOS**.
 4. Magnitud con respecto a la fase. 
 5. Coordenadas polares.
 
+| IMAGENES                    | TITULO DE LA IMAGEN                     |
+|-----------------------------------------|------------------------------------------|
+| ![image](https://github.com/user-attachments/assets/456a8cda-494c-4b2b-888d-29b2529d1721)
+                   | TITULO DE LA IMAGEN                     |
 
 ---
 
