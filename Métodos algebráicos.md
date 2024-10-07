@@ -30,7 +30,7 @@ Entonces el polinomio característico deseado en lazo cerrado es:
 
 $$(z-0.91+j0.23)(z-0.91-j0.23)=z^2-1.82z+0.881$$
 
-### Consideraciones
+### 2.1. Consideraciones
 Se sabe que para el lazo cerrado se debe calcular la función de transferencia en lazo cerrado aplicando un controlador.
 
 Dado que:
@@ -47,11 +47,24 @@ $$ Go(z) = \frac{G(z)C(z)}{1 + G(z)C(z)} = \frac{B(z)N(z)}{A(z)D(z) + B(z)N(z)} 
 
 Dónde:
 
-- **G(z)**: Representa la función de transferencia del sistema o planta en el dominio Z.
+- **$$G(z)**: Representa la función de transferencia del sistema o planta en el dominio Z.
 - **C(z)**: Es la función de transferencia del controlador.
 - **Go(z)**: Es la función de transferencia del sistema en lazo cerrado.
 
+Se multiplican $$A(z)$$ y $$D(z)$$, por lo tanto, en lazo cerrado debe subir el orden del sistema. Luego, se multiplican $$B(z)$$ y $$N(z)$$, por lo tanto, las funciones de la planta y del controlador deben ser propias.
 
+La igualación se realiza en el polinomio característico, lo que quiere decir que no hay control sobre la ubicación de los ceros del sistema. Finalmente, el orden de $$C(z)$$ debe ser un grado menor con respecto a la planta en lazo abierto.
+
+### 2.2. Realizando la igualación de coeficientes
+El polinomio deseado sería: 
+
+$$(z-0.91+j0.23)(z-0.91-j0.23s)(z-0.91)=z-2.732+2.537z-0.8017$$
+
+Se necesita otro término en el polinomio $$B(z)$$ para tener el mismo número de ecuaciones que de términos.
+
+Al igualar:
+
+$$z^3-2.73z^2+2.537z-0.8017=A1z^3+z^2 (Ao-1.819A1)+(0.8187A1-1.819Ao)z+0.8187Ao+0.0043Bo$$
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
