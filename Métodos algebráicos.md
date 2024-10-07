@@ -1,43 +1,52 @@
-# Métodos algebráicos
+# Métodos algebraicos
 
-Son métodos que utilizan herramientas algebraicas para obtener un determinado comportamiento en el sistema en lazo cerrado, la base fundamental de estos métodos es modificar la función de transferencia en lazo cerrado de acuerdo a una respuesta deseada. Existen dos enfoques: por igualación de modelo y por igualación de coeficientes.
+Estos métodos emplean herramientas algebraicas para obtener un comportamiento deseado en el sistema en lazo cerrado. La base fundamental de estos métodos es modificar la función de transferencia del sistema en lazo cerrado de acuerdo con la respuesta deseada. Existen dos enfoques principales: **igualación de modelo** e **igualación de coeficientes**.
 
 ![Diagrama de bloques de un sistema de control discreto](https://github.com/user-attachments/assets/1cffeb00-64ad-406d-90fa-b0cc48ba9d35)
 
-Figura 1. Diagrama de bloques de un sistema de control discreto.
+**Figura 1. Diagrama de bloques de un sistema de control discreto**
 
+---
 
 ## 1. Igualación de modelo
-Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida, entonces conociendo la respuesta que se desea obtener, representada en una función de transferencia de lazo cerrado  $$Go(z)$$ además es posible obtener la función de transferencia del controlador $$C(z)$$ que asegura dicho comportamiento.
 
-Si $$G(z)$$ tiene polos fuera del circulo unitario o 2 o más en $$z = -1$$, entonces la retroalimentación unitaria no puede ser implementada, cualquier $$G(z)$$; debido a que los controladores podrían ser no implementables.
+Si se conoce la función de transferencia en lazo abierto \( G(z) \), y además se sabe la respuesta deseada, representada por la función de transferencia en lazo cerrado \( Go(z) \), entonces es posible determinar la función de transferencia del controlador \( C(z) \), que garantiza dicho comportamiento.
 
-  ### Consideraciones de implementación
-  Los compensadores deben ser causales, además de que el modelo objetivo debe ser estable, y no deben       resultar cancelaciones $$polo – zero =r≤ro$$ sin dejar de lado que los zeros (FASE NO MINIMA) de la planta serán retenidos en lazo cerrado.
+Si \( G(z) \) tiene polos fuera del círculo unitario o varios polos en \( z = -1 \), no se puede implementar una retroalimentación unitaria, ya que los controladores podrían ser **no implementables**.
 
+### Consideraciones de implementación
 
+- Los compensadores deben ser **causales**.
+- El modelo objetivo debe ser **estable**.
+- No deben resultar cancelaciones del tipo \( polo – zero \), es decir, \( r ≤ ro \).
+- Los ceros (fase no mínima) de la planta serán retenidos en lazo cerrado.
+
+---
 
 ## 2. Igualación de coeficientes
-Sabiendo que $$G(z)$$ es la función de lazo abierto y es conocida entonces conociendo la ubicación de los polos que desea, a partir de la respuesta deseada, se puede representar en un polinomio característico en donde es posible obtener la función de transferencia del controlador $$C(z)$$ que asegura dicho comportamiento además se debe tener en cuenta que para aplicar una acción proporcional, se debe primero diseñar un controlador de acción proporcional para ubicar los polos del sistema en lazo cerrado en:
 
-💡Ejemplo
+Si se conoce \( G(z) \) y la ubicación de los polos deseada, es posible expresar la respuesta en un **polinomio característico** y, a partir de allí, calcular la función de transferencia del controlador \( C(z) \) que asegura el comportamiento deseado.
 
-$$P1=0.91+j0.23 $$
+Para ubicar los polos del sistema en lazo cerrado, se debe diseñar un controlador proporcional.
 
-$$P2=0.91-j0.23 $$
+💡 **Ejemplo**:
 
-Entonces el polinomio característico deseado en lazo cerrado es:
+Polos deseados:
 
-$$(z-0.91+j0.23)(z-0.91-j0.23)=z^2-1.82z+0.881$$
+$$ P_1 = 0.91 + j0.23 $$  
+$$ P_2 = 0.91 - j0.23 $$
+
+El polinomio característico deseado en lazo cerrado es:
+
+$$ (z - 0.91 + j0.23)(z - 0.91 - j0.23) = z^2 - 1.82z + 0.881 $$
 
 ### 2.1. Consideraciones
-Se sabe que para el lazo cerrado se debe calcular la función de transferencia en lazo cerrado aplicando un controlador.
 
-Dado que:
+Para calcular la función de transferencia en lazo cerrado con un controlador, se sabe que:
 
 $$ G(z) = \frac{N(z)}{D(z)} $$
 
-y 
+y
 
 $$ C(z) = \frac{B(z)}{A(z)} $$
 
@@ -45,38 +54,44 @@ La función de transferencia en lazo cerrado es:
 
 $$ Go(z) = \frac{G(z)C(z)}{1 + G(z)C(z)} = \frac{B(z)N(z)}{A(z)D(z) + B(z)N(z)} $$
 
-Dónde:
+**Dónde**:
 
-- **$$G(z)**: Representa la función de transferencia del sistema o planta en el dominio Z.
-- **C(z)**: Es la función de transferencia del controlador.
-- **Go(z)**: Es la función de transferencia del sistema en lazo cerrado.
+- **\( G(z) \)**: Función de transferencia de la planta en el dominio Z.
+- **\( C(z) \)**: Función de transferencia del controlador.
+- **\( Go(z) \)**: Función de transferencia en lazo cerrado.
 
-Se multiplican $$A(z)$$ y $$D(z)$$, por lo tanto, en lazo cerrado debe subir el orden del sistema. Luego, se multiplican $$B(z)$$ y $$N(z)$$, por lo tanto, las funciones de la planta y del controlador deben ser propias.
+La multiplicación de \( A(z) \) y \( D(z) \) incrementa el orden del sistema en lazo cerrado. Además, la multiplicación de \( B(z) \) y \( N(z) \) implica que las funciones de la planta y del controlador deben ser propias.
 
-La igualación se realiza en el polinomio característico, lo que quiere decir que no hay control sobre la ubicación de los ceros del sistema. Finalmente, el orden de $$C(z)$$ debe ser un grado menor con respecto a la planta en lazo abierto.
+La igualación se realiza en el **polinomio característico**, lo que significa que no se puede controlar la ubicación de los ceros del sistema. Finalmente, el orden de \( C(z) \) debe ser un grado menor que el de la planta en lazo abierto.
+
+---
 
 ### 2.2. Realizando la igualación de coeficientes
-El polinomio deseado sería: 
 
-$$(z-0.91+j0.23)(z-0.91-j0.23s)(z-0.91)=z-2.732+2.537z-0.8017$$
+El polinomio característico deseado sería:
 
-Se necesita otro término en el polinomio $$B(z)$$ para tener el mismo número de ecuaciones que de términos.
+$$ (z - 0.91 + j0.23)(z - 0.91 - j0.23)(z - 0.91) = z^3 - 2.73z^2 + 2.537z - 0.8017 $$
+
+Para igualar correctamente, se necesita otro término en el polinomio \( B(z) \) para que haya el mismo número de ecuaciones que términos.
 
 Al igualar:
 
-$$z^3-2.73z^2+2.537z-0.8017 = A1z^3+(Ao-1.819A1)z^2+(0.8187A1-1.819Ao)z+0.8187Ao+0.0043Bo$$
+$$ z^3 - 2.73z^2 + 2.537z - 0.8017 = A_1z^3 + (A_0 - 1.819A_1)z^2 + (0.8187A_1 - 1.819A_0)z + 0.8187A_0 + 0.0043B_0 $$
 
+**Resultado**:
 
+No se satisfacen todas las ecuaciones.
 
-Se puede ver que **NO SE SATISFACEN TODAS LAS ECUACIONES**
+| \( A_1 = 1 \) |                  |
+|---------------|------------------|
+| \( A_0 - 1.819A_1 = -2.73 \)  \( A_0 = -2.73 \) | \( A_0 = -0.911 \) |
+| \( 0.8187A_1 - 1.819A_0 = 2.537 \) |              |
+| \( 0.8187A_0 + 0.0043B_0 = 0.8017 \) |            |
 
-| $$A_1=1$$                           |            |
-|-------------------------------------|------------|
-| $$A_0-1.819A_1=-2.73$$ $$A_0=-2.73$$ | $$A_0=-0.911$$ |
-| $$0.8187A_1-1.819A_0=2.537$$         |            |
-| $$0.8187A_0+0.0043B_0=0.8017$$       |            |
+**Tabla 1. Ecuaciones resultantes**
 
-Tabla 1. Lista de ecuaciones
+---
+
 
 Notamos que 
 ## 2. Definiciones
