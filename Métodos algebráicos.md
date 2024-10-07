@@ -33,15 +33,24 @@ $$(z-0.91+j0.23)(z-0.91-j0.23)=z^2-1.82z+0.881$$
 ### Consideraciones
 Se sabe que para el lazo cerrado se debe calcular la función de transferencia en lazo cerrado aplicando un controlador.
 
-Se sabe que:
+Dado que:
 
-$$G(z) = N(z)/D(z)$$
+$$ G(z) = \frac{N(z)}{D(z)} $$
 
-C(z) = B(z)/A(z)
+y 
 
-Por lo que la función en lazo cerrado quedaría así:
+$$ C(z) = \frac{B(z)}{A(z)} $$
 
-Go(z) = G(z)C(z)/1+G(z)C(z)
+La función de transferencia en lazo cerrado es:
+
+$$ Go(z) = \frac{G(z)C(z)}{1 + G(z)C(z)} = \frac{B(z)N(z)}{A(z)D(z) + B(z)N(z)} $$
+
+Dónde:
+
+- **\( G(z) \)**: Representa la función de transferencia del sistema o planta en el dominio Z.
+- **\( C(z) \)**: Es la función de transferencia del controlador.
+- **\( Go(z) \)**: Es la función de transferencia del sistema en lazo cerrado.
+
 
 
 ## 2. Definiciones
