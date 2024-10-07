@@ -30,6 +30,20 @@ Entonces el polinomio característico deseado en lazo cerrado es:
 
 $$(z-0.91+j0.23)(z-0.91-j0.23)=z^2-1.82z+0.881$$
 
+### Consideraciones
+Se sabe que para el lazo cerrado se debe calcular la función de transferencia en lazo cerrado aplicando un controlador.
+
+Se sabe que:
+
+G(z) = N(z)/D(z)
+
+C(z) = B(z)/A(z)
+
+Por lo que la función en lazo cerrado quedaría así:
+
+Go(z) = G(z)C(z)/1+G(z)C(z)
+
+
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
 >🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
