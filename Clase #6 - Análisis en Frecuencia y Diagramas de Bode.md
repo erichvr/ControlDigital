@@ -5,7 +5,7 @@ El análisis en frecuencia es crucial para evaluar el comportamiento de un siste
 ---
 
 ## 1. Análisis en frecuencia:
-Se verifica su comportamiento en la salida a partir de cambios en la frecuencia de entrada, se realiza aplicando señales Seno R = Asen (wkT+0) suponiendo que el sistema tiene un comportamiento lineal. Para finalizar se realizan variaciones en la frecuencia de entrada, se producen variaciones en amplitud y fase en la señal de salida.
+Se verifica su comportamiento en la salida a partir de cambios en la frecuencia de entrada, se realiza aplicando señales seno $$R = Asen (wkT+0)$$ suponiendo que el sistema tiene un comportamiento lineal. Para finalizar se realizan variaciones en la frecuencia de entrada, se producen variaciones en amplitud y fase en la señal de salida.
 
 ### 1.1. Cambios que se producen
 - Salida sinusoidal con amplitud proporcional
@@ -19,6 +19,9 @@ Se verifica su comportamiento en la salida a partir de cambios en la frecuencia 
 | $$G(s) = \frac{A_2 < \phi_2}{A_1 < \phi_1} = M < \phi$$ |                             |
 | $$M = \frac{A_2}{A_1} \quad \phi = \phi_2 - \phi_1$$ | $$\text{No depende de la frecuencia}$$ |
 
+
+### 1.2. Expresar la función de transferencia en términos de la frecuencia
+Se sabe que $$S = j\omega$$ y que la equivalencia de mapeo de polos y ceros es $$z = e^{s t}$$; por lo tanto, para poner la variable $$z$$ en términos de la frecuencia se obtendría $$z = e^{j\omega t}$$.
 
 ---
 
