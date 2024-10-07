@@ -62,11 +62,11 @@ $$ w = \frac{2}{T} \cdot \frac{z - 1}{z + 1} $$
 
 $$ z = \frac{1 + \frac{wT}{2}}{1 - \frac{wT}{2}} $$
 
-Reemplazando $$ z = e^{j\omega T} $$ se obtiene 
+Reemplazando $$z = e^{j\omega T}$$ se obtiene 
 
 $$ \omega = j \frac{2}{T} \tan\left(\frac{\omega T}{2}\right) $$
 
-Sustituyendo $$ \omega = jv $$ resulta en 
+Sustituyendo $$\omega = jv$$ resulta en 
 
 $$ v = \frac{2}{T} \tan\left(\frac{\omega T}{2}\right) $$
 
