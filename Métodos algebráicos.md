@@ -47,9 +47,9 @@ $$ Go(z) = \frac{G(z)C(z)}{1 + G(z)C(z)} = \frac{B(z)N(z)}{A(z)D(z) + B(z)N(z)} 
 
 Dónde:
 
-- **\( G(z) \)**: Representa la función de transferencia del sistema o planta en el dominio Z.
-- **\( C(z) \)**: Es la función de transferencia del controlador.
-- **\( Go(z) \)**: Es la función de transferencia del sistema en lazo cerrado.
+- **G(z)**: Representa la función de transferencia del sistema o planta en el dominio Z.
+- **C(z)**: Es la función de transferencia del controlador.
+- **Go(z)**: Es la función de transferencia del sistema en lazo cerrado.
 
 
 
