@@ -11,7 +11,14 @@ Se verifica su comportamiento en la salida a partir de cambios en la frecuencia 
 - Salida sinusoidal con amplitud proporcional
 - Armónicos igual a la frecuencia que a la entrada
 - Variaciones en amplitud y frecuencia
- 
+
+| $$ A_1 < \phi_1 $$                     | $$ A_2 < \phi_2 $$                       |
+|-----------------------------------------|------------------------------------------|
+| $$ A_1 \cdot \sin(w_1 K T + \phi_1) $$ | $$ A_2 \cdot \sin(w_2 K T + \phi_2) $$  |
+|                                         |                                          |
+| $$ G(s) = \frac{A_2 < \phi_2}{A_1 < \phi_1} = M < \phi $$ |                             |
+| $$ M = \frac{A_2}{A_1} \quad \phi = \phi_2 - \phi_1 $$ | $$ \text{No depende de la frecuencia} $$ |
+
 
 ---
 
