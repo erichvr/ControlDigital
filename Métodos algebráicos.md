@@ -105,3 +105,11 @@ $$ B_1 = 14.23 $$
 **El Controlador Sería:**
 
 $$C(z) = \frac{B_0 + B_1 z}{A_0 + A_1 z} = \frac{-12.99 + 14.23 z}{-0.911 + z}$$
+
+## 3. Conclusiones
+Es posible modelar cualquier respuesta en lazo cerrado a través de los métodos algebraicos, aunque las soluciones satisfacen matemáticamente, por otro lado, no siempre son realizables desde el punto de vista de control.
+
+Por otro lado, en el método de igualación de modelos se modela completamente la función de transferencia, en el método de igualación de coeficientes no se tiene control de los ceros del sistema y para finalizar la igualación de coeficientes se puede simplificar por medio de las ecuaciones diafánticas.
+
+## 4. Referencias
+
