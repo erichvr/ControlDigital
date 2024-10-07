@@ -90,96 +90,12 @@ $$
 $$
 
 
-💡Ejemplo
+## 4. Conclusiones
+- RELACION DE LAS RESPUESTAS: A partir de lo anterior es posible obtener una relación entre la respuesta en frecuencia en lazo abierto con respecto a la respuesta temporal en lazo cerrado.
+- Análisis en Frecuencia: Este análisis es clave para entender cómo un sistema de control reacciona ante cambios en la frecuencia de entrada. Al usar señales senoidales, se pueden observar las variaciones en la amplitud y la fase de la salida, lo que ayuda a diseñar y optimizar compensadores para mantener un buen rendimiento en diversas frecuencias.
 
-$$P1=0.91+j0.23 $$
+- Diagramas de Bode: Estas gráficas muestran la relación entre la frecuencia de entrada y el comportamiento del sistema, revelando la ganancia y el desfase. Son esenciales para evaluar la estabilidad del sistema. Al utilizar escalas logarítmicas, permiten a los ingenieros analizar mejor las variaciones en un amplio rango de frecuencias, lo cual es crucial en sistemas discretos donde la eficacia a altas frecuencias puede verse afectada.
 
-$$P2=0.91-j0.23 $$
-
-Entonces el polinomio característico deseado en lazo cerrado es:
-
-$$(z-0.91+j0.23)(z-0.91-j0.23)=z^2-1.82z+0.881$$
-
-### 2.1. Consideraciones
-Se sabe que para el lazo cerrado se debe calcular la función de transferencia en lazo cerrado aplicando un controlador.
-
-Dado que:
-
-$$ G(z) = \frac{N(z)}{D(z)} $$
-
-y 
-
-$$ C(z) = \frac{B(z)}{A(z)} $$
-
-La función de transferencia en lazo cerrado es:
-
-$$ Go(z) = \frac{G(z)C(z)}{1 + G(z)C(z)} = \frac{B(z)N(z)}{A(z)D(z) + B(z)N(z)} $$
-
-Dónde:
-
-- **$$G(z)**: Representa la función de transferencia del sistema o planta en el dominio Z.
-- **C(z)**: Es la función de transferencia del controlador.
-- **Go(z)**: Es la función de transferencia del sistema en lazo cerrado.
-
-Se multiplican $$A(z)$$ y $$D(z)$$, por lo tanto, en lazo cerrado debe subir el orden del sistema. Luego, se multiplican $$B(z)$$ y $$N(z)$$, por lo tanto, las funciones de la planta y del controlador deben ser propias.
-
-La igualación se realiza en el polinomio característico, lo que quiere decir que no hay control sobre la ubicación de los ceros del sistema. Finalmente, el orden de $$C(z)$$ debe ser un grado menor con respecto a la planta en lazo abierto.
-
-### 2.2. Realizando la igualación de coeficientes
-El polinomio deseado sería: 
-
-$$(z-0.91+j0.23)(z-0.91-j0.23s)(z-0.91)=z-2.732+2.537z-0.8017$$
-
-Se necesita otro término en el polinomio $$B(z)$$ para tener el mismo número de ecuaciones que de términos.
-
-Al igualar:
-
-$$z^3-2.73z^2+2.537z-0.8017 = A1z^3+(Ao-1.819A1)z^2+(0.8187A1-1.819Ao)z+0.8187Ao+0.0043Bo$$
-
-
-
-Se puede ver que **NO SE SATISFACEN TODAS LAS ECUACIONES**
-
-| $$A_1=1$$                           |            |
-|-------------------------------------|------------|
-| $$A_0-1.819A_1=-2.73$$ $$A_0=-2.73$$ | $$A_0=-0.911$$ |
-| $$0.8187A_1-1.819A_0=2.537$$         |            |
-| $$0.8187A_0+0.0043B_0=0.8017$$       |            |
-
-Tabla 1. Lista de ecuaciones
-
-
-Cuando el sistema es de tercer orden se deben ubicar 3 polos.
-
-$$Z=0.91+j0.23$$
-
-$$Z=0.91-j0.23$$
-
-$$Z=0.91$$
-
-
----
-
-### 2.3 Función De Transferencia Nuevo Controlador:
-Los coeficientes obtenidos para el controlador son:
-
-$$ A_1 = 1 $$
-
-$$ B_0 = -12.99 $$
-
-$$ A_0 = -0.911 $$
-
-$$ B_1 = 14.23 $$
-
-**El Controlador Sería:**
-
-$$C(z) = \frac{B_0 + B_1 z}{A_0 + A_1 z} = \frac{-12.99 + 14.23 z}{-0.911 + z}$$
-
-## 3. Conclusiones
-Es posible modelar cualquier respuesta en lazo cerrado a través de los métodos algebraicos, aunque las soluciones satisfacen matemáticamente, por otro lado, no siempre son realizables desde el punto de vista de control.
-
-Por otro lado, en el método de igualación de modelos se modela completamente la función de transferencia, en el método de igualación de coeficientes no se tiene control de los ceros del sistema y para finalizar la igualación de coeficientes se puede simplificar por medio de las ecuaciones diafánticas.
-
-## 4. Referencias
-[1] "Métodos algebráicos" Curso Control Digital.
+## 5. Referencias
+[1] "Análisis en Frecuencia y Diagramas de Bode" Curso Control Digital.
 
