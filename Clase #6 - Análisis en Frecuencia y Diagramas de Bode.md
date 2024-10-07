@@ -31,7 +31,7 @@ Para cualquier función de transferencia se puede separar la parte real e imagin
 
 1. Magnitud y fase con respecto a la frecuencia.
 2. Escala lineal.  
-3. Escala logarítmica DECIBELIOS.
+3. Escala logarítmica <span style="color:red">**DECIBELIOS**</span>.
 4. Magnitud con respecto a la fase. 
 5. Coordenadas polares.
 
