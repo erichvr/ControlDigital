@@ -64,8 +64,16 @@ Se necesita otro término en el polinomio $$B(z)$$ para tener el mismo número d
 
 Al igualar:
 
-$$z^3-2.73z^2+2.537z-0.8017=A1z^3+z^2 (Ao-1.819A1)+(0.8187A1-1.819Ao)z+0.8187Ao+0.0043Bo$$
+$$z^3-2.73z^2+2.537z-0.8017 = A1z^3+(Ao-1.819A1)z^2+(0.8187A1-1.819Ao)z+0.8187Ao+0.0043Bo$$
 
+Se puede ver que NO SE SATISFACEN TODAS LAS ECUACIONES
+
+| A1=1                           |            |
+| A0-1.819A_1=-2.73 A0=-2.73     | A_0=-0.911 |
+| 0.8187𝐴_1 − 1.819𝐴_0 = 2.537   |            |
+| 0.8187𝐴_0 + 0.0043𝐵_𝑜 = 0.8017 |            |
+
+Notamos que 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
 >🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
