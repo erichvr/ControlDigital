@@ -50,11 +50,25 @@ Tabla 2. Análisis de frecuencia y diagrama de bode de una señal
 
 - Los decibelios dB no son una unidad física, se utilizan como una interpolación de algunas cantidades como ganancia o potencia.
 
-  **En el caso de la ganancia**
-  **En el caso de la ganancia**  
+  **En el caso de la ganancia** 
 $$A_{dB} = 20 \log_{10}(A)$$
 
 
+### 1.4. Análisis Frecuencial en Tiempo Discreto:
+
+No es posible hacer análisis en frecuencia directamente en tiempo discreto, se aprovecha la transformación bilineal (TUSTIN) para aproximar al tiempo continuo.
+
+$$ w = \frac{2}{T} \cdot \frac{z - 1}{z + 1} $$
+
+$$ z = \frac{1 + \frac{wT}{2}}{1 - \frac{wT}{2}} $$
+
+Reemplazando $$ z = e^{j\omega T} $$ se obtiene 
+
+$$ \omega = j \frac{2}{T} \tan\left(\frac{\omega T}{2}\right) $$
+
+Sustituyendo $$ \omega = jv $$ resulta en 
+
+$$ v = \frac{2}{T} \tan\left(\frac{\omega T}{2}\right) $$
 
 
 ---
