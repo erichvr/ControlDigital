@@ -112,4 +112,5 @@ Es posible modelar cualquier respuesta en lazo cerrado a través de los métodos
 Por otro lado, en el método de igualación de modelos se modela completamente la función de transferencia, en el método de igualación de coeficientes no se tiene control de los ceros del sistema y para finalizar la igualación de coeficientes se puede simplificar por medio de las ecuaciones diafánticas.
 
 ## 4. Referencias
+[1] "Métodos algebráicos" Curso Control Digital.
 
