@@ -74,3 +74,6 @@ La metodología continúa con el cálculo de la frecuencia necesaria para cumpli
 Visualización y Evaluación: El uso del diagrama de Bode como herramienta visual no solo facilita la comprensión del comportamiento del sistema en diferentes frecuencias, sino que también permite la evaluación directa de los márgenes de estabilidad, simplificando el proceso de diseño y ajuste de sistemas de control.
 
 Flexibilidad en el Control PID: La estructura del controlador PID, considerada una red de atraso-adelanto, permite una sintonización intuitiva y eficaz, y aunque el análisis en frecuencia es viable, la preferencia por la sintonización en el dominio del tiempo en la práctica industrial resalta la importancia de métodos accesibles y efectivos en entornos reales.
+
+## 8. Referencias
+[1] "Diseño de redes de atraso por análisis en frecuencia" Curso Control Digital.
