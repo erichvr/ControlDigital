@@ -8,9 +8,9 @@ El análisis en frecuencia es crucial para evaluar el comportamiento de un siste
 Se verifica su comportamiento en la salida a partir de cambios en la frecuencia de entrada, se realiza aplicando señales Seno R = Asen (wkT+0) suponiendo que el sistema tiene un comportamiento lineal. Para finalizar se realizan variaciones en la frecuencia de entrada, se producen variaciones en amplitud y fase en la señal de salida.
 
 ### 1.1. Cambios que se producen
-•	Salida sinusoidal con amplitud proporcional
-•	Armónicos igual a la frecuencia que a la entrada
-•	Variaciones en amplitud y frecuencia
+- Salida sinusoidal con amplitud proporcional
+- Armónicos igual a la frecuencia que a la entrada
+- Variaciones en amplitud y frecuencia
  
 
 ---
