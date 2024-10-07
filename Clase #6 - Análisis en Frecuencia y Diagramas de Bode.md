@@ -21,7 +21,20 @@ Se verifica su comportamiento en la salida a partir de cambios en la frecuencia 
 
 
 ### 1.2. Expresar la función de transferencia en términos de la frecuencia
-Se sabe que $$S = j\omega$$ y que la equivalencia de mapeo de polos y ceros es $$z = e^{s t}$$; por lo tanto, para poner la variable $$z$$ en términos de la frecuencia se obtendría $$z = e^{j\omega t}$$.
+Se sabe que $$S = j\omega$$ y que la equivalencia de mapeo de polos y ceros es $$z = e^{s t}$$; por lo tanto, para poner la variable $$z$$ en términos de la frecuencia se obtendría:
+
+$$z = e^{j\omega t}$$.
+
+### 1.3. Diagramas de frecuencia:
+
+Para cualquier función de transferencia se puede separar la parte real e imaginaria, entonces es posible hallar la magnitud y la fase en el dominio de la frecuencia, por lo tanto, esto podría ser graficado en un plano para observar su comportamiento.
+
+1. Magnitud y fase con respecto a la frecuencia.
+2. Escala lineal.  
+3. Escala logarítmica DECIBELIOS.
+4. Magnitud con respecto a la fase. 
+5. Coordenadas polares.
+
 
 ---
 
