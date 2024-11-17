@@ -11,18 +11,27 @@ Para lograr caracterizar una planta con comportamiento exponencial, se propone u
 Entonces, a partir de la siguiente gráfica se determinan unos valores necesarios para armar el modelo del sistema:
 
 ![Respuesta dinámica de un proceso integrante](https://github.com/user-attachments/assets/4bb5d28f-c472-4d36-b406-f9a03319c10f)
+
 Figura 1. Respuesta dinámica de un proceso integrante
 
 Donde:
   - $O_1$ Es el estado bajo del sistema, muchas veces 0.
   - $O_2$ Es la magnitud de la señal en el tiempo $T_3$
-  - 
+    
   - $I_1$ Es el estado bajo del escalón, muchas veces 0.
   - $I_2$ Es el estado alto del escalón.
-  - 
+    
   - $T_1$ Es el tiempo donde el escalón cambia de estado bajo a alto.
   - $T_2$ Es el tiempo donde se cruza una línea continua del estado de reposo y una linea diagonal de la pendiente de la señal.
   - $T_3$ Es el tiempo donde la amplitud de la señal del sitema y la señal de entrada es el mismo.
+
+Con estos valores, es posible calcular la ganancia estática del sistema o ganancia de integración $K_m$, que no es más que la pendiente de la curva.
+
+$$K_m = \frac{O_2-O_1}{(I_2-I_1)(T_3-T_2)}$$
+
+También, se puede obtener el tiempo muerto $T_m$
+
+$$T_m = T_2 - T_1$$
 
 
 ## 1. Subtítulos
