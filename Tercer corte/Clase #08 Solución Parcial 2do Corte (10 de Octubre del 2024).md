@@ -21,8 +21,9 @@ $$ D_o(z) = (z+100)(z+100)(z+100)(z + 2 - 2.73j)(z + 2 + 2.73j) $$
 
 $$ D_o(z) = (z^3 + 300z^2 + 3*10^4z + 10^6)(z^2 + 4z + \frac{114529}{10^4}) $$
 
-$$ D_o(z) = (z^5 + 304z^4 + \frac{312114529}{1 \cdot 10^4}z^3 + \frac{112343587}{100}z^2 + 4343587z + 11452900) $$
+$$ D_o(z) = (z^5 + 304z^4 + \frac{312114529}{10^4}z^3 + \frac{112343587}{100}z^2 + 4343587z + 11452900) $$
 
+>🔑 *Clave:* Existen herramientas como *_MATLAB_* o calculadoras como *_CALCES_* que facilitan el proceso de multiplicación y simplicación, puede ser útil para ahorrar tiempo.
 
 
 ## 2. Definiciones
