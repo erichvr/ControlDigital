@@ -1,8 +1,11 @@
-# Discretización de controladores analógicos
+# Solución del parcial del segundo corte
 
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+Esta clase fue destinada para socializar los resultados del parcial del segundo corte y mostrar la solución correcta del ejercicio propuesto sobre métodos algebráicos. A cada grupo se le propuso un método diferente, por lo que a continuación se mostrará el ejercició que nos correspondió.
+
+## Obtención del sistema discreto en lazo cerrado
+Se tiene la siguiente planta en tiempo discreto:
+
+$$G(z)=\frac{1.61*10^-7z^2 + 6.25*10^-7z + 1.53*10^-7}{z^3 - 2.87z^2 + 2.75z - 0.88}$$
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
