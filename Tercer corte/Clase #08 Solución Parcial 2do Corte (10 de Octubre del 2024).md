@@ -15,12 +15,21 @@ $$G_o(z) = \frac{\frac{A(z)}{B(z)} \frac{N(z)}{D(z)}}{1 + \frac{A(z)}{B(z)} \fra
 
 $$G_o(z) = \frac{A(z)N(z)}{B(z)D(z) + A(z)N(z)}$$
 
-
-
 ## Obtención del sistema discreto en lazo cerrado
 Se tiene la siguiente planta en tiempo discreto. Teniendo en cuenta los polos dados para la función en lazo cerrado, se debe obtener el controlador por el método de igualación de coeficientes:
 
 $$ G(z) = \frac{1.61 \cdot 10^{-7} z^2 + 6.25 \cdot 10^{-7} z + 1.53 \cdot 10^{-7}}{z^3 - 2.87z^2 + 2.75z - 0.88} $$
+
+>🔑 *Método de igualación de coeficientes:* Consiste en igualar los coeficientes de las variables de grados comunes de dos funciones.
+
+💡**Ejemplo 1:** 
+$R = 4z + 2$
+$P = ez + 2 + u$
+
+Igualar coeficientes
+
+$4 = e$
+$2 = 2 + u; u = 0$
 
 A partir de los siguientes polos, se debe hallar el polinomio característico del denominador de la función en lazo cerrado. El cual, será de ayuda para obtener el controlador de la planta.
 
@@ -59,9 +68,19 @@ $$\left( \frac{2890088287516223}{18889465931478580854784}A0 - \frac{22}{25}B0 \r
 
 Simplificado
 
-$$(1.53·10^{-7}A0 - 0.88B0) + (6.25·10^{-7}A0 + 1.53·10^{-7}A1 + 2.75B0 - 0.88B1)z + (1.61·10^{-7}A0 + 6.25·10^{-7}A1 + 1.53·10^{-7}A2 - 2.87B0 + 2.75B1 - 0.88B2)z^2 + (1.61·10^{-7}A1 + 2.75B2 - 2.87B1 + 6.25·10^{-7}A2 + B0)z^3 + (1.61·10^{-7}A2 + B1 - 2.87B2)z^4 + B2z^5$$
+$$(B2z^5 + (1.61·10^{-7}A2 + B1 - 2.87B2)z^4 + (1.61·10^{-7}A1 + 2.75B2 - 2.87B1 + 6.25·10^{-7}A2 + B0)z^3 + (1.61·10^{-7}A0 + 6.25·10^{-7}A1 + 1.53·10^{-7}A2 - 2.87B0 + 2.75B1 - 0.88B2)z^2 + (6.25·10^{-7}A0 + 1.53·10^{-7}A1 + 2.75B0 - 0.88B1)z + 1.53·10^{-7}A0 - 0.88B0)$$
 
 
+Recordando el denominador $D_o(z)$ y usando el método de igualación de coeficientes es posible obtener el valor de las incógnitas $A0, A1, A2, B0, B1$ y $B2$.
+
+D_o(z) = (z^5 + 304z^4 + 31211.4529z^3 + 1123435.87z^2 + 4343587z + 11452900) $$
+
+$1 = B2$
+$304 = 1.61·10^{-7}A2 + B1 - 2.87B2$
+$31211.4529 = 1.61·10^{-7}A1 + 2.75B2 - 2.87B1 + 6.25·10^{-7}A2 + B0$
+$1123435.87 = 1.61·10^{-7}A0 + 6.25·10^{-7}A1 + 1.53·10^{-7}A2 - 2.87B0 + 2.75B1 - 0.88B2$
+$4343587 = 6.25·10^{-7}A0 + 1.53·10^{-7}A1 + 2.75B0 - 0.88B1$
+$11452900 = 1.53·10^{-7}A0 - 0.88B0$
 
 
 
