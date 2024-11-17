@@ -25,9 +25,9 @@ $$ D_o(z) = (z^5 + 304z^4 + \frac{312114529}{10^4}z^3 + \frac{112343587}{100}z^2
 
 >🔑 *Clave:* Existen herramientas como *_MATLAB_* o calculadoras como *_CALCES_* que facilitan el proceso de multiplicación y simplicación, puede ser útil para ahorrar tiempo.
 
-A continuación, se desea obtener el controlador que permite que la función $ _G(z)_ $ logre la respuesta requerida.
+A continuación, se desea obtener el controlador que permite que la función $_G(z)_$ logre la respuesta requerida.
 Por lo tanto, se plantea un controlador con las siguientes propiedades:
-- Orden $ n-1 $ inferior al grado mayor del denominador (Esto se verifica sumando el mayor grado de $ G(z) $ y $ C(z) $, ya que tiene que tener el mismo grado que el denominador caracteríztico $ D_o(z) $ ).
+- Orden $ n-1 $ inferior al grado mayor del denominador (Esto se verifica sumando el mayor grado de $G(z)$ y $ C(z) $, ya que tiene que tener el mismo grado que el denominador caracteríztico $ D_o(z) $ ).
 - Bipropio, esto indica que tanto el numerador como el denominador sean del mismo grado.
 
 Identificando que el sistema $ G(z) $ tiene en su denominador el grado $ 3 $, su controlador será de grado $ 2 $ y resultando así:
