@@ -1,7 +1,7 @@
 # Sistemas inestables - Introducción al espacio de estados - Algunas operaciones con matrices
 
 Para esta clase, se dividide el temario en 3 partes:
-- *Identificación de la función $G_m(s)$ y sintonización del controlador.* Dónde mediante el método de procesos
+- **Identificación de la función $G_m(s)$ y sintonización del controlador.** Dónde mediante el método de procesos
 - a
 - b
   
