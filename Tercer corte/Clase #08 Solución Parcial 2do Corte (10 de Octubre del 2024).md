@@ -22,13 +22,16 @@ $$ G(z) = \frac{1.61 \cdot 10^{-7} z^2 + 6.25 \cdot 10^{-7} z + 1.53 \cdot 10^{-
 
 >🔑 *Método de igualación de coeficientes:* Consiste en igualar los coeficientes de las variables de grados comunes de dos funciones.
 
-💡**Ejemplo 1:** 
+💡**Ejemplo 1:**
+
 $R = 4z + 2$
+
 $P = ez + 2 + u$
 
 Igualar coeficientes
 
 $4 = e$
+
 $2 = 2 + u; u = 0$
 
 A partir de los siguientes polos, se debe hallar el polinomio característico del denominador de la función en lazo cerrado. El cual, será de ayuda para obtener el controlador de la planta.
