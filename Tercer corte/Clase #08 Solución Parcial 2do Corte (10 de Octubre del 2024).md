@@ -1,4 +1,4 @@
-<span style="font-family: 'Courier New', monospace;">This text will use Courier New font.</span>
+<span style="font-family: 'Times New Roman', monospace;">This text will use Courier New font.</span>
 
 # Solución del parcial del segundo corte
 
