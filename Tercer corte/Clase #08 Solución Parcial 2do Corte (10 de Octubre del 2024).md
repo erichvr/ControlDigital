@@ -1,5 +1,3 @@
-<span style="font-family: 'Times New Roman', monospace;">This text will use Courier New font.</span>
-
 # Solución del parcial del segundo corte
 
 Esta clase fue destinada para socializar los resultados del parcial del segundo corte y mostrar la solución correcta del ejercicio propuesto sobre métodos algebráicos. A cada grupo se le propuso un método diferente, por lo que a continuación se mostrará el ejercició que nos correspondió.
@@ -7,15 +5,15 @@ Esta clase fue destinada para socializar los resultados del parcial del segundo 
 Primeramente, se presentarán unas generalidades que serán de ayuda para identificar cada parte del ejercicio
 
 - Función de transferencia lazo abierto:   $$G(z) = \frac{N(z)}{D(z)}$$
-- Controlador del sistema:                 $$C(z) = \frac{B(z)}{A(z)}$$
+- Controlador del sistema:                 $$C(z) = \frac{A(z)}{B(z)}$$
 - Función de transferencia lazo cerrado:   $$G_o(z) = \frac{N_o(z)}{D_o(z)}$$
 - Función con retroalimentación unitaria en lazo cerrado:
 
 $$G_o(z) = \frac{C(z)G(z)}{1 + C(z)G(z)}$$
 
-$$G_o(z) = \frac{\frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}{1 + \frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}$$
+$$G_o(z) = \frac{\frac{A(z)}{B(z)} \frac{N(z)}{D(z)}}{1 + \frac{A(z)}{B(z)} \frac{N(z)}{D(z)}}$$
 
-$$G_o(z) = \frac{B(z)N(z)}{A(z)D(z) + B(z)N(z)}$$
+$$G_o(z) = \frac{A(z)N(z)}{B(z)D(z) + A(z)N(z)}$$
 
 
 
@@ -50,6 +48,10 @@ Por lo tanto, se plantea un controlador con las siguientes propiedades:
 Identificando que el sistema $G(z)$ tiene en su denominador el grado $3$, su controlador será de grado $2$ y resultando así:
 
 $$ C(z) = \frac {A_0 + A_1z + A_2z^2}{B_0 + B_1z + B_2z^2} $$
+
+Y reemplazando en la ecuación que obtiene la función en lazo cerrado
+
+$$G_o(z) = \frac{A(z)N(z)}{B(z)D(z) + A(z)N(z)} = \frac{(A_0 + A_1z + A_2z^2)(1.61 \cdot 10^{-7} z^2 + 6.25 \cdot 10^{-7} z + 1.53 \cdot 10^{-7})}{(B_0 + B_1z + B_2z^2)(z^3 - 2.87z^2 + 2.75z - 0.88) + (A_0 + A_1z + A_2z^2)(1.61 \cdot 10^{-7} z^2 + 6.25 \cdot 10^{-7} z + 1.53 \cdot 10^{-7})}$$
 
 
 
