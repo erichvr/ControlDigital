@@ -33,6 +33,10 @@ También, se puede obtener el tiempo muerto $T_m$
 
 $$T_m = T_2 - T_1$$
 
+Y así, obtener la expresión $G_m(s)$ también conocida como sistema de factor integrante más tiempo muerto.
+
+$$𝐺_m(s) = \frac{K_m \dot e^{-T_m \dot s}}{s}$$
+
 
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
