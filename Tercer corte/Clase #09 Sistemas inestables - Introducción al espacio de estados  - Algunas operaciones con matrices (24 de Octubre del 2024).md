@@ -75,6 +75,7 @@ Tabla 1. Sintonía del Controlador Proporcional - Integral
 | Rotach              | $\frac{1.21}{K_mT_m}$                           | $1.6T_m$   | $0.48T_m$                         |
 | Zou and Brigham     | $\frac{2}{K_m(𝜆 + 0.5T_m}$  $0.5T_m ≤ 𝜆 ≤ 3T_m$ | $2𝜆 + T_m$ | $\frac{𝜆 + 0.25T_m}{2𝜆 + T_m}T_m$ |
 
+Tabla 2. Sintonía del Controlador Proporcional - Integral - Derivativo
 
 
 
