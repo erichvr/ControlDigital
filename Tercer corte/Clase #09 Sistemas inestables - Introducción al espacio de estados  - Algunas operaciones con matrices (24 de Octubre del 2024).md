@@ -1,6 +1,10 @@
-# Discretización de controladores analógicos
+# Sistemas inestables - Introducción al espacio de estados - Algunas operaciones con matrices
 
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
+Para esta clase, se dividide el temario en 3 partes:
+- *Identificación de la función $G_m(s)$ y sintonización del controlador.* Dónde mediante el método de procesos
+- a
+- b
+  
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
@@ -74,4 +78,9 @@ Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas t
 Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
 
 ## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+
+[1] "" Curso Control Digital
+
+[2] "" Curso Control Digital
+
+[3] "" Curso Control Digital
