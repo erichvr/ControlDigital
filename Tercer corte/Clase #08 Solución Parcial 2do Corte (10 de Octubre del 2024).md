@@ -1,3 +1,5 @@
+<span style="font-family: 'Courier New', monospace;">This text will use Courier New font.</span>
+
 # Solución del parcial del segundo corte
 
 Esta clase fue destinada para socializar los resultados del parcial del segundo corte y mostrar la solución correcta del ejercicio propuesto sobre métodos algebráicos. A cada grupo se le propuso un método diferente, por lo que a continuación se mostrará el ejercició que nos correspondió.
@@ -14,6 +16,7 @@ $$G_o(z) = \frac{C(z)G(z)}{1 + C(z)G(z)}$$
 $$G_o(z) = \frac{\frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}{1 + \frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}$$
 
 $$G_o(z) = \frac{B(z)N(z)}{A(z)D(z) + B(z)N(z)}$$
+
 
 
 ## Obtención del sistema discreto en lazo cerrado
