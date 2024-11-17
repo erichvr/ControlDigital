@@ -4,13 +4,14 @@ Esta clase fue destinada para socializar los resultados del parcial del segundo 
 
 Primeramente, se presentarán unas generalidades que serán de ayuda para identificar cada parte del ejercicio
 
-- Función de transferencia lazo abierto:    $$G(z) = \frac{N(z)}{D(z)}$$
-- Controlador del sistema:                  $$C(z) = \frac{B(z)}{A(z)}$$
-- Función de transferencia lazo cerrado:    $$G_o(z) = \frac{N_o(z)}{D_o(z)}$$
+- Función de transferencia lazo abierto:   $$G(z) = \frac{N(z)}{D(z)}$$
+- Controlador del sistema:                 $$C(z) = \frac{B(z)}{A(z)}$$
+- Función de transferencia lazo cerrado:   $$G_o(z) = \frac{N_o(z)}{D_o(z)}$$
 - Función con retroalimentación unitaria en lazo cerrado:
-$$G_o(z) = \frac{C(z)G(z)}{1 + C(z)G(z)}$$
 
-$$G_o(z) = \frac{\frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}{1 + \frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}$$
+  $$G_o(z) = \frac{C(z)G(z)}{1 + C(z)G(z)}$$
+
+  $$G_o(z) = \frac{\frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}{1 + \frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}$$
 
 
 ## Obtención del sistema discreto en lazo cerrado
