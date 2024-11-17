@@ -5,7 +5,8 @@ Esta clase fue destinada para socializar los resultados del parcial del segundo 
 ## Obtención del sistema discreto en lazo cerrado
 Se tiene la siguiente planta en tiempo discreto:
 
-$$G(z)=\frac{1.61*10^-7z^2 + 6.25*10^-7z + 1.53*10^-7}{z^3 - 2.87z^2 + 2.75z - 0.88}$$
+$$ G(z) = \frac{1.61 \cdot 10^{-7} z^2 + 6.25 \cdot 10^{-7} z + 1.53 \cdot 10^{-7}}{z^3 - 2.87z^2 + 2.75z - 0.88} $$
+
 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
