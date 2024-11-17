@@ -35,7 +35,7 @@ $$T_m = T_2 - T_1$$
 
 Y así, obtener la expresión $G_m(s)$ también conocida como sistema de factor integrante más tiempo muerto.
 
-$$𝐺_m(s) = \frac{K_m \dot e^{-T_m \dot s}}{s}$$
+$$𝐺_m(s) = \frac{K_m · e^{-T_m · s}}{s}$$
 
 
 ## 1. Subtítulos
