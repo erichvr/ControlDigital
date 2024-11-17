@@ -1,10 +1,33 @@
 # Sistemas inestables - Introducción al espacio de estados - Algunas operaciones con matrices
 
 Para esta clase, se dividide el temario en 3 partes:
-- **Identificación de la función $G_m(s)$ y sintonización del controlador.** Dónde mediante el método de procesos
+- **Identificación de la función $G_m(s)$ y sintonización del controlador.** Dónde mediante el método de procesos integrantes, se obtiene la función de transferencia en lazo abierto de un sistema que normalmente tiende a crecer indefinidamente. Esto ayuda a reducir esa tendencia a un valor finíto.
 - a
 - b
   
+## 1. **Identificación de la función $G_m(s)$ y sintonización del controlador.**
+Para lograr caracterizar una planta con comportamiento exponencial, se propone un método que permite obtener su comportamiento en lazo abierto con respecto a una entrada dada. Se conoce como **Caracterización de un proceso integrante**.
+
+Entonces, a partir de la siguiente gráfica se determinan unos valores necesarios para armar el modelo del sistema:
+
+![Respuesta dinámica de un proceso integrante](https://github.com/user-attachments/assets/4bb5d28f-c472-4d36-b406-f9a03319c10f)
+Figura 1. Respuesta dinámica de un proceso integrante
+
+Donde:
+  - $O_1$ Es el estado bajo del sistema, muchas veces 0.
+  - $O_2$ Es la magnitud de la señal en el tiempo $T_3$
+  - 
+  - $I_1$ Es el estado bajo del escalón, muchas veces 0.
+  - $I_2$ Es el estado alto del escalón.
+  - 
+  - $T_1$ Es el tiempo donde el escalón cambia de estado bajo a alto.
+  - $T_2$ Es el tiempo donde se cruza una línea continua del estado de reposo y una linea diagonal de la pendiente de la señal.
+  - $T_3$ Es el tiempo donde la amplitud de la señal del sitema y la señal de entrada es el mismo.
+
+
+## 1. Subtítulos
+Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
