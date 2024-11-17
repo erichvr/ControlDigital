@@ -32,7 +32,7 @@ Por lo tanto, se plantea un controlador con las siguientes propiedades:
 
 Identificando que el sistema $ G(z) $ tiene en su denominador el grado $ 3 $, su controlador será de grado $ 2 $ y resultando así:
 
-$ C(z) = \frac {A_0 + A_1z + A_2z^2}{B_0 + B_1z + B_2z^2}$
+$ C(z) = \frac {A_0 + A_1z + A_2z^2}{B_0 + B_1z + B_2z^2} $
 
 
 ## 2. Definiciones
