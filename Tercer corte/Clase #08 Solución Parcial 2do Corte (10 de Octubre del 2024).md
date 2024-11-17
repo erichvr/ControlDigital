@@ -2,6 +2,14 @@
 
 Esta clase fue destinada para socializar los resultados del parcial del segundo corte y mostrar la solución correcta del ejercicio propuesto sobre métodos algebráicos. A cada grupo se le propuso un método diferente, por lo que a continuación se mostrará el ejercició que nos correspondió.
 
+Primeramente, se presentarán unas generalidades que serán de ayuda para identificar cada parte del ejercicio
+
+- Función de transferencia lazo abierto $G(z) = \frac{N(z)}{D(z)}$
+- Controlador del sistema $C(z) = \frac{B(z)}{A(z)}$
+- Función de transferencia lazo abierto $G_o(z) = \frac{N_o(z)}{D_o(z)}$
+- Función con retroalimentación unitaria en lazo cerrado:
+  $$$G_o(z) = \frac{C(z)G(z)}{1 + C(z)G(z)}$$$
+
 ## Obtención del sistema discreto en lazo cerrado
 Se tiene la siguiente planta en tiempo discreto. Teniendo en cuenta los polos dados para la función en lazo cerrado, se debe obtener el controlador por el método de igualación de coeficientes:
 
@@ -33,6 +41,10 @@ Por lo tanto, se plantea un controlador con las siguientes propiedades:
 Identificando que el sistema $G(z)$ tiene en su denominador el grado $3$, su controlador será de grado $2$ y resultando así:
 
 $$ C(z) = \frac {A_0 + A_1z + A_2z^2}{B_0 + B_1z + B_2z^2} $$
+
+
+
+
 
 
 ## 2. Definiciones
