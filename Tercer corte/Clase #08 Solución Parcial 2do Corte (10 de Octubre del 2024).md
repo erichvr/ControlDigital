@@ -13,6 +13,8 @@ $$G_o(z) = \frac{C(z)G(z)}{1 + C(z)G(z)}$$
 
 $$G_o(z) = \frac{\frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}{1 + \frac{B(z)}{A(z)} \frac{N(z)}{D(z)}}$$
 
+$$G_o(z) = \frac{B(z)N(z)}{A(z)D(z) + B(z)N(z)}$$
+
 
 ## Obtención del sistema discreto en lazo cerrado
 Se tiene la siguiente planta en tiempo discreto. Teniendo en cuenta los polos dados para la función en lazo cerrado, se debe obtener el controlador por el método de igualación de coeficientes:
