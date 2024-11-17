@@ -82,7 +82,39 @@ $$1123435.87 = 1.61·10^{-7}A0 + 6.25·10^{-7}A1 + 1.53·10^{-7}A2 - 2.87B0 + 2.
 $$4343587 = 6.25·10^{-7}A0 + 1.53·10^{-7}A1 + 2.75B0 - 0.88B1$$
 $$11452900 = 1.53·10^{-7}A0 - 0.88B0$$
 
+💡**Código para obtener el denominador de lazo cerrado con controlador de esta función:**
+```
+clc
+clear all
+close all
 
+% Define the symbolic variable
+syms z;
+
+% Define the symbolic coefficients for A(z) and B(z)
+A0 = sym('A0');
+A1 = sym('A1');
+A2 = sym('A2');
+
+B0 = sym('B0');
+B1 = sym('B1');
+B2 = sym('B2');
+
+% Define N(z) and D(z)
+N = 1.61e-7 * z^2 + 6.25e-7 * z + 1.53e-7;  % N(z)
+D = z^3 - 2.87 * z^2 + 2.75 * z - 0.88;  % D(z)
+
+% Expression for G_o(z)
+G_o = expand((A0 + A1 * z + A2 * z^2) * N / ((B0 + B1 * z + B2 * z^2) * D + (A0 + A1 * z + A2 * z^2) * N));
+
+% Simplify the expression
+G_o_simplified = simplify(G_o);
+
+% Display the simplified expression in pretty format
+pretty(G_o_simplified)
+
+D_o = expand(((B0 + B1 * z + B2 * z^2) * D + (A0 + A1 * z + A2 * z^2) * N)) %Formula del denominador
+```
 
 
 ## 2. Definiciones
