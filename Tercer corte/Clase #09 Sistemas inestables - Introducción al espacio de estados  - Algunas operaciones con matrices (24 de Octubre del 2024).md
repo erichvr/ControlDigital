@@ -53,6 +53,7 @@ Figura 2. Sistema de control retroalimentado
 Estas magnitudes son obtenidas a partir de expresiones propuestas por cada autor y presentadas a continuación
 - **Controlador PI**
 Sintonía del ontrolador Proporcional - Integral
+
 | Método              | $K_c$ | $T_i$ |
 |---------------------|-------|-------|
 | Ziegler & Nichols   |       |       |
