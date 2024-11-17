@@ -130,4 +130,5 @@ Una vez presentada la solución del parcial, es posible reflexionar un par de pu
 
 ## 11. Referencias
 [1] "Parcial Segundo Corte" Curso Control Digital.
+
 [2] "Métodos algebráicos" Curso Control Digital.
