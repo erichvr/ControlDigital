@@ -65,6 +65,7 @@ Estas magnitudes son obtenidas a partir de expresiones propuestas por cada autor
 Tabla 1. Sintonía del Controlador Proporcional - Integral
 
 - **Controlador PID**
+
 | Método              | $K_c$                                           | $T_i$      | $T_d$                             |
 |---------------------|-------------------------------------------------|------------|-----------------------------------|
 | Ford                | $\frac{1.48}{K_mT_m}$                           | $2T_m$     | $0.37T_m$                         |
