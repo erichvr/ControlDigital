@@ -6,6 +6,7 @@ Para esta clase, se dividide el temario en 3 partes:
 - b
   
 ## 1. **Identificación de la función $G_m(s)$ y sintonización del controlador.**
+### 1.1 **Identificación de la función $G_m(s)$.**
 Para lograr caracterizar una planta con comportamiento exponencial, se propone un método que permite obtener su comportamiento en lazo abierto con respecto a una entrada dada. Se conoce como **Caracterización de un proceso integrante**.
 
 Entonces, a partir de la siguiente gráfica se determinan unos valores necesarios para armar el modelo del sistema:
@@ -36,6 +37,34 @@ $$T_m = T_2 - T_1$$
 Y así, obtener la expresión $G_m(s)$ también conocida como sistema de factor integrante más tiempo muerto.
 
 $$𝐺_m(s) = \frac{K_m · e^{-T_m · s}}{s}$$
+
+A partir de este punto, se puede identificar el controlador desea. El curso propone (Aparte de otros métodos como uso de relés) el uso de un **controlador PI o PID**
+
+### 1.2 **Sintonización del controlador.**
+
+El sistema en lazo cerrado requiere de la obtención de unos parametros de acuerdo al controlador escogido, tales como:
+  - $K_c$ Ganancia proporcional.
+  - $T-i$ Tiempo integral.
+  - $T-d$ Tiempo derivativo.
+
+![Sistema de control retroalimentado](https://github.com/user-attachments/assets/baf0b16a-919f-4fa0-838c-de682697cbb9)
+Figura 2. Sistema de control retroalimentado
+
+Estas magnitudes son obtenidas a partir de expresiones propuestas por cada autor y presentadas a continuación
+- **Controlador PI**
+Sintonía del ontrolador Proporcional - Integral
+| Método              | $K_c$ | $T_i$ |
+|---------------------|-------|-------|
+| Ziegler & Nichols   |       |       |
+| Coon                |       |       |
+| Aström and Hägglund |       |       |
+| Skogestad           |       |       |
+
+
+- **Controlador PID**
+
+
+
 
 
 ## 1. Subtítulos
