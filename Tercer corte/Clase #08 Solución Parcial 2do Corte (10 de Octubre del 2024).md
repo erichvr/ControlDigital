@@ -3,9 +3,21 @@
 Esta clase fue destinada para socializar los resultados del parcial del segundo corte y mostrar la solución correcta del ejercicio propuesto sobre métodos algebráicos. A cada grupo se le propuso un método diferente, por lo que a continuación se mostrará el ejercició que nos correspondió.
 
 ## Obtención del sistema discreto en lazo cerrado
-Se tiene la siguiente planta en tiempo discreto:
+Se tiene la siguiente planta en tiempo discreto. Teniendo en cuenta los polos dados para la función en lazo cerrado, se debe obtener el controlador por el método de igualación de coeficientes:
 
 $$ G(z) = \frac{1.61 \cdot 10^{-7} z^2 + 6.25 \cdot 10^{-7} z + 1.53 \cdot 10^{-7}}{z^3 - 2.87z^2 + 2.75z - 0.88} $$
+
+A partir de los siguientes polos, se debe hallar el polinomio característico del denominador de la función en lazo cerrado. El cual, será de ayuda para obtener el controlador de la planta.
+
+$$ P_1 = -100$$
+$$ P_2 = -100$$
+$$ P_3 = -100$$
+$$ P_4 = -2 + 2.73j$$
+$$ P_5 = -2 - 2.73j$$
+
+Entonces, lo primero que se debe hacer es obtener el denominador de la función en lazo cerrado que obtiene esos polos.
+
+$$ D_o(z) = (z+100)(z+100)(z+100)(z + 2 - 2.73j)(z + 2 + 2.73j) $$
 
 
 ## 2. Definiciones
