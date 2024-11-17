@@ -42,7 +42,7 @@ $$ P_3 = -100$$
 $$ P_4 = -2 + 2.73j$$
 $$ P_5 = -2 - 2.73j$$
 
-Entonces, lo primero que se debe hacer es obtener el denominador de la función en lazo cerrado que obtiene esos polos.
+Para ello, se crea una expresión que de lugar a esos polos.
 
 $$ D_o(z) = (z+100)(z+100)(z+100)(z + 2 - 2.73j)(z + 2 + 2.73j) $$
 
@@ -85,7 +85,7 @@ $$1123435.87 = 1.61·10^{-7}A0 + 6.25·10^{-7}A1 + 1.53·10^{-7}A2 - 2.87B0 + 2.
 $$4343587 = 6.25·10^{-7}A0 + 1.53·10^{-7}A1 + 2.75B0 - 0.88B1$$
 $$11452900 = 1.53·10^{-7}A0 - 0.88B0$$
 
-💡**Código para obtener el denominador de lazo cerrado con controlador de esta función:**
+💡**Código para obtener el denominador de lazo cerrado con coeficientes de controlador de esta función:**
 ```
 clc
 clear all
