@@ -19,7 +19,7 @@ Entonces, lo primero que se debe hacer es obtener el denominador de la función 
 
 $$ D_o(z) = (z+100)(z+100)(z+100)(z + 2 - 2.73j)(z + 2 + 2.73j) $$
 
-$$ D_o(z) = (z^3 + 300z^2 + 30000*z + 1000000)(z^2 + 4*z + \frac{114529}{10000}) $$
+$$ D_o(z) = (z^3 + 300z^2 + 30000z + 1000000)(z^2 + 4z + \frac{114529}{10000}) $$
 
 
 
