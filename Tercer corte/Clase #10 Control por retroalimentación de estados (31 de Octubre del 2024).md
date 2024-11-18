@@ -9,7 +9,18 @@ $$Y(k) = **C**X(k) + **D**u(k)$$
 
 De la que **A,B,C** y **D** son matrices de coeficientes, teniendo esto en cuenta es posible construir la matriz de controlabilidad
 
-$$U = [B AB AAB AAAB ... AA...B]$$
+$$U = [BㅤABㅤAABㅤAAABㅤ...ㅤAA...B]$$
+
+Para saber sí un sistema es controlable, se debe hallar su determinante y este valor debe ser diferente de 0
+
+| $X_1(k+1)$ | ‎‎ㅤ|‎ㅤ 3ㅤ1ㅤ|| $X_1(k)$ |ㅤ| 1 |
+
+| $X_2(k+2)$ | = |‎ㅤ 2ㅤ1ㅤ|| $X_2(k)$ | + | 0 | $U(k)$
+
+
+ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤ ㅤㅤㅤ ㅤ| $X_1(k)$ |
+
+$Y(k) =$ |ㅤ4ㅤ2ㅤ|| $X_2(k)$ |
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
