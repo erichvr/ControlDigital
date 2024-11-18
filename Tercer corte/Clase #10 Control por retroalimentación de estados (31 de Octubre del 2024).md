@@ -63,9 +63,9 @@ Se obtiene la matriz de observabilidad
 
 $V =$ ‎‎|‎ㅤㅤCㅤ ㅤ|
 
-ㅤ ㅤ|‎ㅤ ㅤCAㅤㅤ|
+ㅤ ㅤ|‎ㅤ ㅤCAㅤ|
 
-ㅤ ㅤ|‎ㅤㅤCAAㅤㅤ|
+ㅤ ㅤ|‎ㅤㅤCAAㅤ|
 
 ㅤ ㅤ|‎ㅤㅤ...ㅤㅤ|
 
