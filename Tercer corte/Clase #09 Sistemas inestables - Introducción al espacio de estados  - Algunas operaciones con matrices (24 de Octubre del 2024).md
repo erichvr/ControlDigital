@@ -1,9 +1,8 @@
 # Sistemas inestables - Introducción al espacio de estados - Algunas operaciones con matrices
 
-Para esta clase, se dividide el temario en 3 partes:
+Para esta clase, se dividide el temario en 2 partes:
 - **Identificación de la función $G_m(s)$ y sintonización del controlador.** Dónde mediante el método de procesos integrantes, se obtiene la función de transferencia en lazo abierto de un sistema que normalmente tiende a crecer indefinidamente. Esto ayuda a reducir esa tendencia a un valor finíto.
 - a
-- b
   
 ## 1. **Identificación de la función $G_m(s)$ y sintonización del controlador.**
 ### 1.1 **Identificación de la función $G_m(s)$.**
@@ -77,9 +76,13 @@ Tabla 1. Sintonía del Controlador Proporcional - Integral
 
 Tabla 2. Sintonía del Controlador Proporcional - Integral - Derivativo
 
+## 2. **Algunas operaciones en el Espacio de estados**
 
+Es posible usar la representación de estados como método para analizar y controlar un sistema, a continuación se presentará en qué consiste y como formar estas matrices.
 
+Se tiene una función de transferencia discreta como:
 
+$$G(z) = \frac{b_0z^n + b_1z^{n-1} +...+ b_{n-1}z + b_n}{z^n + a_1z^{n-1} +...+ a_{n-1}z + a_n}$$
 
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
