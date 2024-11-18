@@ -78,11 +78,22 @@ Tabla 2. Sintonía del Controlador Proporcional - Integral - Derivativo
 
 ## 2. **Algunas operaciones en el Espacio de estados**
 
-Es posible usar la representación de estados como método para analizar y controlar un sistema, a continuación se presentará en qué consiste y como formar estas matrices.
+Es posible usar la representación de estados como método para analizar y controlar un sistema, esto con el objetivo de relacionar el comportamiento de sistemas con multiples entradas y salidas. A continuación se presentará en qué consiste y como formar estas matrices.
 
 Se tiene una función de transferencia discreta como:
 
 $$G(z) = \frac{b_0z^n + b_1z^{n-1} +...+ b_{n-1}z + b_n}{z^n + a_1z^{n-1} +...+ a_{n-1}z + a_n}$$
+
+A partir de sus coeficientes, se puede expresar en una matriz cuadrada del tamaño del grado mayor de su polinomio
+
+### 2.1 **Forma canónica Controlable**
+💡**Ejemplo 1:** 
+Se tiene la función:
+
+$$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{s^4 + Es^3 + Fs^2 + Gs + H}$$
+
+
+
 
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
@@ -109,7 +120,7 @@ Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y fina
 
 💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
 
-$$R=\frac{V}{I}$$
+Aquí está la matriz en línea: $\begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix}$.
 
 ## 6. Figuras
 Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
