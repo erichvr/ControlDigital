@@ -42,7 +42,7 @@ $U =$ ‎‎|‎ㅤ1ㅤ4ㅤ|
 
 Cálculo del determinante:
 
-$U =$ ‎‎|‎ㅤAㅤBㅤ|ㅤㅤ$A·D-C·B > 0$
+$U =$ ‎‎|‎ㅤAㅤBㅤ|ㅤㅤ$A·D-C·B$ $> 0$
 
 ㅤ ㅤ|‎ㅤCㅤDㅤ|
 
