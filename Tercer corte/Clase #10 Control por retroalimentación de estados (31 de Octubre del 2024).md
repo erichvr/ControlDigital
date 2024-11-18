@@ -32,7 +32,7 @@ $B =$ ‎‎|‎ㅤ1ㅤ|
 
 $AB =$ ‎‎|‎ㅤ3ㅤ1ㅤ||‎ㅤ1ㅤ| = |‎ㅤ4ㅤ|
 
-ㅤ ㅤㅤ |‎ㅤ2ㅤ1ㅤ||‎ㅤ1ㅤ| = |ㅤ3ㅤ|
+ㅤ ㅤ |‎ㅤ2ㅤ1ㅤ||‎ㅤ1ㅤ| = |ㅤ3ㅤ|
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
