@@ -61,13 +61,13 @@ $$Y(k) = **C**X(k) + **D**u(k)$$
 
 Se obtiene la matriz de observabilidad
 
-$V =$ ‎‎|‎ㅤCㅤ|
+$V =$ ‎‎|‎ㅤㅤCㅤ ㅤ|
 
-ㅤ ㅤ|‎ㅤCAㅤ|
+ㅤ ㅤ|‎ㅤ ㅤCAㅤㅤ|
 
-ㅤ ㅤ|‎ㅤCAAㅤ|
+ㅤ ㅤ|‎ㅤㅤCAAㅤㅤ|
 
-ㅤ ㅤ|‎ㅤ...ㅤ|
+ㅤ ㅤ|‎ㅤㅤ...ㅤㅤ|
 
 ㅤ ㅤ|‎ㅤCAA...ㅤ|
 ## 3. Subsecciones
