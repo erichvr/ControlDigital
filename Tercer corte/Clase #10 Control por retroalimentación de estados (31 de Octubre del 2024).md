@@ -7,6 +7,10 @@ Se tiene una forma general de las matrices en el espacio de estados, tal como:
 $$X(k + 1) = **A**X(k) + **B**u(k)$$
 $$Y(k) = **C**X(k) + **D**u(k)$$
 
+De la que **A,B,C** y **D** son matrices de coeficientes, teniendo esto en cuenta es posible construir la matriz de controlabilidad
+
+$$U = [B AB AAB AAAB ... AA...B]$$
+
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
