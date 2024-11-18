@@ -92,6 +92,7 @@ Se tiene la función:
 
 $$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{s^4 + Es^3 + Fs^2 + Gs + H}$$
 
+$\begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix}$.
 
 
 
