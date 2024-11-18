@@ -40,6 +40,12 @@ $U =$ ‎‎|‎ㅤ1ㅤ4ㅤ|
 
 ㅤ ㅤ|‎ㅤ1ㅤ3ㅤ|
 
+Cálculo del determinante:
+
+$U =$ ‎‎|‎ㅤAㅤBㅤ|ㅤㅤ$A·D-C·B > 0$
+
+ㅤ ㅤ|‎ㅤCㅤDㅤ|
+
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
