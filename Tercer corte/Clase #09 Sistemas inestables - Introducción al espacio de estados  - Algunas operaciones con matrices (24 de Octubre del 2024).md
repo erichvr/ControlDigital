@@ -43,8 +43,8 @@ A partir de este punto, se puede identificar el controlador desea. El curso prop
 
 El sistema en lazo cerrado requiere de la obtención de unos parametros de acuerdo al controlador escogido, tales como:
   - $K_c$ Ganancia proporcional.
-  - $T-i$ Tiempo integral.
-  - $T-d$ Tiempo derivativo.
+  - $T_i$ Tiempo integral.
+  - $T_d$ Tiempo derivativo.
 
 ![Sistema de control retroalimentado](https://github.com/user-attachments/assets/baf0b16a-919f-4fa0-838c-de682697cbb9)
 Figura 2. Sistema de control retroalimentado
