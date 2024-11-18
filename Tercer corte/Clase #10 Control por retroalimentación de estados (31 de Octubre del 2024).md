@@ -65,11 +65,37 @@ $V =$ ‎‎|‎ㅤㅤCㅤ ㅤ|
 
 ㅤ ㅤ|‎ㅤ ㅤCAㅤ|
 
-ㅤ ㅤ|‎ㅤCAAㅤㅤ|
+ㅤ ㅤ|‎ㅤㅤCAAㅤ|
 
-ㅤ ㅤ|‎ㅤ...ㅤㅤㅤ|
+ㅤ ㅤ|‎ㅤㅤ...ㅤㅤ|
 
 ㅤ ㅤ|‎ㅤCAA...ㅤ|
+
+Para saber sí un sistema es controlable, se debe hallar su determinante y este valor debe ser diferente de 0
+
+💡**Ejemplo 2:**
+
+| $X_1(k+1)$ | ‎‎ㅤ|‎ㅤ 3ㅤ1ㅤ|| $X_1(k)$ |ㅤ| 1 |
+
+| $X_2(k+2)$ | = |‎ㅤ 2ㅤ1ㅤ|| $X_2(k)$ | + | 1 | $U(k)$
+
+
+ㅤㅤ ㅤㅤㅤㅤㅤ| $X_1(k)$ |
+
+$Y(k) =$ |ㅤ4ㅤ2ㅤ|| $X_2(k)$ |
+
+$V =$ ‎‎|‎ㅤㅤCㅤ ㅤ|
+
+ㅤ ㅤ|‎ㅤ ㅤCAㅤ|
+
+$C =$ ‎‎|‎ㅤ4ㅤ2ㅤ|
+
+$CA =$ ‎‎|‎ㅤ4ㅤ2ㅤ||‎ㅤ3ㅤ1ㅤ|
+
+ㅤㅤㅤㅤㅤㅤㅤㅤ|‎ㅤ2ㅤ1ㅤ|
+
+
+
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
