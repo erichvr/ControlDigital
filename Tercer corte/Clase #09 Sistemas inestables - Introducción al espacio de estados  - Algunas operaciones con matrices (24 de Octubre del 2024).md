@@ -91,7 +91,7 @@ El tamaño de la matriz debe ser cantidad de variables y cantidad de coeficiente
 💡**Ejemplo 1:** 
 Se tiene la función:
 
-$$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{s^4 + Es^3 + Fs^2 + Gs + H}$$
+$$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{z^4 + Ez^3 + Fz^2 + Gz + H}$$
 
 | $X_1(k+1)$ | ‎‎ㅤ|‎ㅤ 0ㅤ0ㅤ0ㅤ1ㅤ|| $X_1(k)$ |ㅤ| 0 |
 
@@ -100,7 +100,6 @@ $$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{s^4 + Es^3 + Fs^2 + Gs + H}$$
 | $X_3(k+3)$ | = |‎ㅤ 0ㅤ0ㅤ0ㅤ1ㅤ|| $X_3(k)$ | + | 0 | $u(k)$ 
 
 | $X_4(k+4)$ | ‎ㅤ|ㅤ-H -Gㅤ-F -Eㅤ|| $X_4(k)$ |ㅤ| 1 |
-
 
 
 ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤ ㅤㅤ| $X_1(k)$ |
@@ -116,7 +115,7 @@ $Y(k) =$ |ㅤDㅤCㅤBㅤAㅤ|| $X_2(k)$ |
 💡**Ejemplo 2:** 
 Se tiene la función:
 
-$$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{s^4 + Es^3 + Fs^2 + Gs + H}$$
+$$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{z^4 + Ez^3 + Fz^2 + Gz + H}$$
 
 | $X_1(k+1)$ | ‎‎ㅤ|‎ㅤ 0ㅤ0ㅤ0ㅤ-Hㅤ|| $X_1(k)$ |ㅤ| D |
 
@@ -127,14 +126,41 @@ $$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{s^4 + Es^3 + Fs^2 + Gs + H}$$
 | $X_4(k+4)$ | ‎ㅤ|ㅤ 0ㅤ0ㅤ1ㅤ-Eㅤ|| $X_4(k)$ |ㅤ| A |
 
 
-
 ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤ ㅤㅤ| $X_1(k)$ |
 
-$Y(k) =$ |ㅤ0ㅤ0ㅤ0ㅤ1ㅤ|| $X_2(k)$ |
+$Y(k) =$ |ㅤ 0ㅤ0ㅤ0ㅤ1 ㅤ|| $X_2(k)$ |
 
 ㅤ ㅤㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_3(k)$ |
 
 ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_4(k)$ |
+
+### 2.3 **Forma canónica diagonal**
+
+💡**Ejemplo 3:** 
+Se tienen los polos de la función:
+
+$$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{(z+E)(z+F)(z+G)(z+H) = \frac{k_1}{(z+E)} + \frac{k_2}{(z+F)} + \frac{k_3}{(z+G)} + \frac{k_4}{(z+H)} +}$$
+
+$$P_1 = -E;P_2 = -F;P_3 = -G;P_4 = -H;$$
+
+| $X_1(k+1)$ | ‎‎ㅤ|‎ㅤ -Eㅤ0ㅤ0ㅤ0ㅤ|| $X_1(k)$ |ㅤ| 1 |
+
+| $X_2(k+2)$ | = |‎ㅤ 0ㅤ-Fㅤ0ㅤ0ㅤ|| $X_2(k)$ | + | 1 |
+
+| $X_3(k+3)$ | = |‎ㅤ 0ㅤ0ㅤ-Gㅤ0ㅤ|| $X_3(k)$ | + | 1 | $u(k)$ 
+
+| $X_4(k+4)$ | ‎ㅤ|ㅤ 0ㅤ0ㅤ0ㅤ-Hㅤ|| $X_4(k)$ |ㅤ| 1 |
+
+
+ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤ ㅤㅤ| $X_1(k)$ |
+
+$Y(k) =$ |ㅤ k_1ㅤk_2ㅤk_3ㅤk_4 ㅤ|| $X_2(k)$ |
+
+ㅤ ㅤㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_3(k)$ |
+
+ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_4(k)$ |
+
+
 
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
@@ -217,4 +243,4 @@ Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede
 
 [2] "" Curso Control Digital
 
-[3] "" Curso Control Digital
+[3] "Formas Canonicas de un Espacio de Estado" The Kelvin Talk Show Youtube https://www.youtube.com/watch?v=TuXAeY2V9ZA
