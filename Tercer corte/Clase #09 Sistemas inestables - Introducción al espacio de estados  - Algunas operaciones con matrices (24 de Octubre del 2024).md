@@ -67,11 +67,11 @@ Tabla 1. Sintonía del Controlador Proporcional - Integral
 
 | Método              | $K_c$                                           | $T_i$      | $T_d$                             |
 |---------------------|-------------------------------------------------|------------|-----------------------------------|
-| Ford                | $\frac{1.48}{K_mT_m}$                           | $2T_m$     | $0.37T_m$                         |
-| Coon                | $\frac{0.4}{K_mT_m}$                            | $3.2T_m$   | $0.8T_m$                          |
-| Aström and Hägglund | $\frac{0.94}{K_mT_m}$                           | $2T_m$     | $0.5T_m$                          |
-| Leonard             | $\frac{0.74}{K_mT_m}$                           | $12.2T_m$  | $0.41T_m$                         |
-| Rotach              | $\frac{1.21}{K_mT_m}$                           | $1.6T_m$   | $0.48T_m$                         |
+| Ford                | $$\frac{1.48}{K_mT_m}$$                           | $2T_m$     | $0.37T_m$                         |
+| Coon                | $$\frac{0.4}{K_mT_m}$$                            | $3.2T_m$   | $0.8T_m$                          |
+| Aström and Hägglund | $$\frac{0.94}{K_mT_m}$$                           | $2T_m$     | $0.5T_m$                          |
+| Leonard             | $$\frac{0.74}{K_mT_m}$$                           | $12.2T_m$  | $0.41T_m$                         |
+| Rotach              | $$\frac{1.21}{K_mT_m}$$                           | $1.6T_m$   | $0.48T_m$                         |
 | Zou and Brigham     | $\frac{2}{K_m(𝜆 + 0.5T_m}$  $0.5T_m ≤ 𝜆 ≤ 3T_m$ | $2𝜆 + T_m$ | $\frac{𝜆 + 0.25T_m}{2𝜆 + T_m}T_m$ |
 
 Tabla 2. Sintonía del Controlador Proporcional - Integral - Derivativo
