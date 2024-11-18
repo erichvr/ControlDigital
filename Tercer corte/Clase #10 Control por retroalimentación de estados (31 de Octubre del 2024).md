@@ -24,10 +24,10 @@ Para saber sí un sistema es controlable, se debe hallar su determinante y este 
 
 $Y(k) =$ |ㅤ4ㅤ2ㅤ|| $X_2(k)$ |
 
-$$U = [BㅤAB]$$
+$U = [BㅤAB]$
 
-$$B =ㅤ[1]$$ㅤㅤ$$AB =ㅤ[3 1][1]$$
-$$ㅤ ㅤ[1]$$ㅤㅤ$$ㅤ ㅤ[2 1][1]$$
+$B =ㅤ[1]$ㅤㅤ$AB =ㅤ[3ㅤ1][1]$$
+$ㅤ ㅤ[1]$ㅤㅤ$ㅤ ㅤ[2ㅤ1][1]$$
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
