@@ -86,6 +86,7 @@ $$G(z) = \frac{b_0z^n + b_1z^{n-1} +...+ b_{n-1}z + b_n}{z^n + a_1z^{n-1} +...+ 
 
 A partir de sus coeficientes, se puede expresar en una matriz cuadrada del tamaño del grado mayor de su polinomio
 
+El tamaño de la matriz debe ser cantidad de variables y cantidad de coeficientes. Es decir, sólo puede ser 2x2 o superior para considerarse espacio, una matriz cuadrada.
 ### 2.1 **Forma canónica Controlable**
 💡**Ejemplo 1:** 
 Se tiene la función:
@@ -102,14 +103,38 @@ $$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{s^4 + Es^3 + Fs^2 + Gs + H}$$
 
 
 
-ㅤㅤㅤㅤㅤㅤㅤㅤㅤ ㅤㅤ| $X_1(k)$ |
+ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤ ㅤㅤ| $X_1(k)$ |
 
 $Y(k) =$ |ㅤDㅤCㅤBㅤAㅤ|| $X_2(k)$ |
 
-ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_3(k)$ |
+ㅤ ㅤㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_3(k)$ |
 
-ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_4(k)$ |
+ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_4(k)$ |
 
+### 2.2 **Forma canónica Observable**
+
+💡**Ejemplo 2:** 
+Se tiene la función:
+
+$$\frac{Y(z)}{X(z)} = \frac{Az^3 + Bz^2 + Cz + D}{s^4 + Es^3 + Fs^2 + Gs + H}$$
+
+| $X_1(k+1)$ | ‎‎ㅤ|‎ㅤ 0ㅤ0ㅤ0ㅤ-Hㅤ|| $X_1(k)$ |ㅤ| D |
+
+| $X_2(k+2)$ | = |‎ㅤ 1ㅤ0ㅤ0ㅤ-Gㅤ|| $X_2(k)$ | + | C |
+
+| $X_3(k+3)$ | = |‎ㅤ 0ㅤ1ㅤ0ㅤ-Fㅤ|| $X_3(k)$ | + | B | $u(k)$ 
+
+| $X_4(k+4)$ | ‎ㅤ|ㅤ 0ㅤ0ㅤ1ㅤ-Eㅤ|| $X_4(k)$ |ㅤ| A |
+
+
+
+ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤ ㅤㅤ| $X_1(k)$ |
+
+$Y(k) =$ |ㅤ0ㅤ0ㅤ0ㅤ1ㅤ|| $X_2(k)$ |
+
+ㅤ ㅤㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_3(k)$ |
+
+ㅤㅤ ㅤㅤㅤㅤㅤㅤㅤㅤ ㅤ| $X_4(k)$ |
 
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
