@@ -26,9 +26,13 @@ $Y(k) =$ |ㅤ4ㅤ2ㅤ|| $X_2(k)$ |
 
 $U = [BㅤAB]$
 
-$B =$ ‎‎|‎ㅤ1ㅤ|| $X_1(k)$ |ㅤ| 1 |
+$B =$ ‎‎|‎ㅤ1ㅤ|
 
-ㅤ ㅤ |‎ㅤ1ㅤ|| $X_2(k)$ | + | 1 | $U(k)$
+ㅤ ㅤ |‎ㅤ1ㅤ|
+
+$AB =$ ‎‎|‎ㅤ3ㅤ1ㅤ||‎ㅤ1ㅤ| = |‎ㅤ4ㅤ|
+
+ㅤ ㅤㅤ |‎ㅤ2ㅤ1ㅤ||‎ㅤ1ㅤ| = |ㅤ3ㅤ|
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
