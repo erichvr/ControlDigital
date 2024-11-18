@@ -7,6 +7,8 @@ Se tiene una forma general de las matrices en el espacio de estados, tal como:
 $$X(k + 1) = **A**X(k) + **B**u(k)$$
 $$Y(k) = **C**X(k) + **D**u(k)$$
 
+
+## 1. Controlabilidad
 De la que **A,B,C** y **D** son matrices de coeficientes, teniendo esto en cuenta es posible construir la matriz de controlabilidad
 
 $$U = [BㅤABㅤAABㅤAAABㅤ...ㅤAA...B]$$
@@ -47,10 +49,27 @@ $U =$ ‎‎|‎ㅤAㅤBㅤ|ㅤㅤAD - CB $≠ 0$
 
 ㅤ ㅤ|‎ㅤCㅤDㅤ|
 
-$U =$ ‎‎|‎ㅤ1ㅤ4ㅤ| ㅤㅤ3-4 
+$U =$ ‎‎|‎ㅤ1ㅤ4ㅤ| ㅤㅤ3-4 ≠ 0 **El sistema es controlable**
 
 ㅤ ㅤ|‎ㅤ1ㅤ3ㅤ|
 
+## 2. Observabilidad
+
+Partiendo del mismo modelo
+$$X(k + 1) = **A**X(k) + **B**u(k)$$
+$$Y(k) = **C**X(k) + **D**u(k)$$
+
+Se obtiene la matriz de observabilidad
+
+$V =$ ‎‎|‎ㅤCㅤ|
+
+ㅤ ㅤ|‎ㅤCAㅤ|
+
+ㅤ ㅤ|‎ㅤCAAㅤ|
+
+ㅤ ㅤ|‎ㅤ...ㅤ|
+
+ㅤ ㅤ|‎ㅤCAA...ㅤ|
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
